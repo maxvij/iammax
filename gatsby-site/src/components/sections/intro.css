@@ -1,0 +1,17 @@
+section.intro {
+    text-align: center;
+}
+section.intro .profile-avatar {
+    width: 400px;
+    height: 400px;
+}
+section.intro .profile-avatar:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    background: #6FBFA2;
+    border-radius: 50%;
+}
