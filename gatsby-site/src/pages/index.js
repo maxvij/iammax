@@ -1,18 +1,39 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Max from "../images/max-bw.png"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <section>
-
+    <SEO title="Home"/>
+    <section className="intro">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h1>I'm Max.</h1>
+            <p className="subtitle">A versatile designer <br/>located in Groningen.</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
+            <div className="profile-avatar">
+              <img src={Max} alt="Me."/>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <h1>I'm Max.</h1>
-    <h2>A versatile designer located in Groningen.</h2>
-    <Link to="/page-2/">Go to page 2</Link>
+    <section className="work">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h2>My work.</h2>
+
+          </div>
+        </div>
+      </div>
+    </section>
   </Layout>
 )
 
