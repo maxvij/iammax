@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {useStaticQuery, graphql} from "gatsby"
+import useDarkMode from "use-dark-mode";
 
 import Header from "./header"
 
@@ -25,11 +26,15 @@ const Layout = ({children}) => {
         }
       }
     }
-  `)
+  `);
+
+  const darkMode = useDarkMode(false);
+
+  const handleTheme = theme => theme === "dark" ? darkMode.enable() : darkMode.disable();
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title}/>
+      <Header siteTitle={data.site.siteMetadata.title} handleTheme={handleTheme}/>
       <main>{children}</main>
       <footer>
         <div className="container">

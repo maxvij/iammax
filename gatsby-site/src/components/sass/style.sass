@@ -14,7 +14,20 @@ h1
   margin: 10px 0
 
 body
+  &.dark-mode
+    transition: color, background .3s ease-in-out
+    *
+      transition: color, background .3s ease-in-out
+  &.light-mode
+    transition: color, background .3s ease-in-out
+    *
+      transition: color, background .3s ease-in-out
+
+body
   font-family: 'Vollkorn', serif
+  background: $white
+  &.dark-mode
+    background: $dm-white
 
   h2
     font-family: 'Vollkorn', serif
