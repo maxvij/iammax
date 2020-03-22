@@ -32,9 +32,17 @@ const Layout = ({children}) => {
       <Header siteTitle={data.site.siteMetadata.title}/>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Max van IJsselmuiden. Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <p>
+                © {new Date().getFullYear()}, Max van IJsselmuiden. Built with
+                {` `}
+                <a href="https://www.gatsbyjs.org">Gatsby</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </footer>
     </>
   )

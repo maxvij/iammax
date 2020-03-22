@@ -29,7 +29,20 @@ const IndexPage = () => (
         <div className="row">
           <div className="col-12">
             <h2>My work.</h2>
-
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            T.b.a.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="contact">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h2>Get in touch.</h2>
           </div>
         </div>
       </div>
