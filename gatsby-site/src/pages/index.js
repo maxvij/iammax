@@ -8,14 +8,31 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home"/>
     <section className="intro">
-      <h1>I'm Max.</h1>
-      <p className="subtitle">A versatile designer located in Groningen.</p>
-      <div className="profile-avatar">
-        <img src={Max} />
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h1>I'm Max.</h1>
+            <p className="subtitle">A versatile designer <br/>located in Groningen.</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
+            <div className="profile-avatar">
+              <img src={Max} alt="Me."/>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section>
-        <h2>My work.</h2>
+    <section className="work">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h2>My work.</h2>
+
+          </div>
+        </div>
+      </div>
     </section>
   </Layout>
 )
