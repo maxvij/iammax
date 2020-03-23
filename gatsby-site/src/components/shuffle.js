@@ -32,7 +32,7 @@ class Shuffle extends React.Component {
         <ul className="tags">
           {this.props.tags.map((tag) => {
             return (
-              <li className={this.state.activeTags.indexOf(tag) > -1 ? "active" : ""} onClick={this.toggleTag.bind(this, tag)}>{tag}</li>
+              <li className={(this.state.activeTags != null) ? (this.state.activeTags.indexOf(tag) > -1 ? "active" : "") : ""} onClick={this.toggleTag.bind(this, tag)}>{tag}</li>
             )
           })}
         </ul>
