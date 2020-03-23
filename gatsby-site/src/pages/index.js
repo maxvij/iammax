@@ -3,6 +3,15 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Max from "../images/max-bw.png"
+import Shuffle from "../components/shuffle";
+
+let cases = [
+  {
+    name: "Test",
+    imgUrl: "TestURL",
+    description: "This is a test case"
+  }
+];
 
 const IndexPage = () => (
   <Layout>
@@ -33,7 +42,7 @@ const IndexPage = () => (
         </div>
         <div className="row">
           <div className="col-12">
-            T.b.a.
+            <Shuffle tags={["Test", "Blub"]} cases={cases}/>
           </div>
         </div>
       </div>
