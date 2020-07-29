@@ -1,10 +1,9 @@
 import {Link} from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Sunrise from "./sunrise";
-import Sunset from "./sunset";
+import DarkModeToggle from "./darkmodetoggle";
 
-const Header = ({siteTitle, handleTheme}) => (
+const Header = ({siteTitle, handleTheme, darkMode}) => (
   <header>
     <div className="container">
       <div className="row">
@@ -16,8 +15,7 @@ const Header = ({siteTitle, handleTheme}) => (
           </h1>
         </div>
         <div className="col-2">
-          <Sunrise onClick={handleTheme} />
-          <Sunset onClick={handleTheme} />
+          <DarkModeToggle darkMode={darkMode} onClick={handleTheme} />
         </div>
       </div>
     </div>

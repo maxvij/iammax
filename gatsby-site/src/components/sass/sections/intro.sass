@@ -7,8 +7,13 @@ body
         color: $dm-black
 
 section.intro
+  padding: 30px 0 0 0
   text-align: center
+  overflow: hidden
+  position: relative
   background: url('/images/grunge-bg.jpg')
+  h1, p.subtitle
+    z-index: 999 !important
   p.subtitle
     font-family: 'Vollkorn', serif
     font-weight: 600
@@ -21,7 +26,10 @@ section.intro
     height: auto
     position: relative
     overflow: hidden
-    margin: -40px 0 0 0
+    margin: 0
+    img
+      margin: 0
+      z-index: 9999
     &:after
       content: ""
       position: absolute
@@ -34,3 +42,7 @@ section.intro
       float: left
       background: $primary-color
       border-radius: 50%
+canvas
+  z-index: -1 !important
+.row + canvas
+  z-index: 1 !important

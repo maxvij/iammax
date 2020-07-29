@@ -1,62 +1,81 @@
-import React from "react"
+import React, { useLayoutEffect, useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Max from "../images/max-bw.png"
-import Shuffle from "../components/shuffle";
+import Confetti from "react-confetti"
 
-let cases = [
-  {
-    name: "Test",
-    imgUrl: "TestURL",
-    description: "This is a test case"
-  }
-];
+class IndexPage extends React.Component {
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home"/>
-    <section className="intro">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <h1>I'm Max.</h1>
-            <p className="subtitle">A versatile designer <br/>located in Groningen.</p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
-            <div className="profile-avatar">
-              <img src={Max} alt="Me."/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section className="work">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <h2>My work.</h2>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <Shuffle tags={["Test", "Blub"]} cases={cases}/>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section className="contact">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <h2>Get in touch.</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-  </Layout>
-)
+    state = {
+        width: window.innerWidth,
+        height: window.innerHeight
+    }
+
+    updateDimensions = () => {
+        this.setState({width: window.innerWidth, height: window.innerHeight})
+    }
+
+    componentDidMount() {
+        window.addEventListener('resize', this.updateDimensions)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateDimensions)
+    }
+
+    render() {
+        const colors = [
+            '#6FBFA2',
+            '#A61723'
+        ]
+
+        return <Layout>
+            <SEO title="Home"/>
+            <section className="intro">
+                <div className="container">
+                    <Confetti numberOfPieces={16} tweenDuration={400} colors={colors} gravity={0.02} friction={0.99} width={this.state.width - 15} height={820}/>
+                    <div className="row">
+                        <div className="col-12">
+                            <h1>I'm Max.</h1>
+                            <p className="subtitle">A versatile designer <br/>located in Groningen.</p>
+                        </div>
+                    </div>
+                    <Confetti numberOfPieces={16} tweenDuration={400} colors={colors} gravity={0.02} friction={0.99} width={this.state.width - 15} height={765}/>
+                    <div className="row">
+                        <div className="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
+                            <div className="profile-avatar">
+                                <img src={Max} alt="Me."/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="work">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <h2>My work.</h2>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-12">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="contact">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <h2>Get in touch.</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </Layout>
+
+    }
+}
 
 export default IndexPage

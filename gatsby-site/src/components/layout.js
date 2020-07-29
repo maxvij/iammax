@@ -34,7 +34,7 @@ const Layout = ({children}) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} handleTheme={handleTheme}/>
+      <Header siteTitle={data.site.siteMetadata.title} darkMode={darkMode} handleTheme={handleTheme}/>
       <main>{children}</main>
       <footer>
         <div className="container">
