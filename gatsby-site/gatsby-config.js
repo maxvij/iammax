@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+  pathPrefix: `/demo`,
   siteMetadata: {
     title: `Max.`,
     description: `Personal Portfolio of Max van IJsselmuiden, a versatile designer located in Groningen.`,

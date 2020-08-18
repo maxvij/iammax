@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react"
+import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -6,24 +6,6 @@ import Max from "../images/max-bw.png"
 import Confetti from "react-confetti"
 
 class IndexPage extends React.Component {
-
-    state = {
-        width: window.innerWidth,
-        height: window.innerHeight
-    }
-
-    updateDimensions = () => {
-        this.setState({width: window.innerWidth, height: window.innerHeight})
-    }
-
-    componentDidMount() {
-        window.addEventListener('resize', this.updateDimensions)
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.updateDimensions)
-    }
-
     render() {
         const colors = [
             '#6FBFA2',
@@ -34,14 +16,12 @@ class IndexPage extends React.Component {
             <SEO title="Home"/>
             <section className="intro">
                 <div className="container">
-                    <Confetti numberOfPieces={16} tweenDuration={400} colors={colors} gravity={0.02} friction={0.99} width={this.state.width - 15} height={820}/>
                     <div className="row">
                         <div className="col-12">
                             <h1>I'm Max.</h1>
                             <p className="subtitle">A versatile designer <br/>located in Groningen.</p>
                         </div>
                     </div>
-                    <Confetti numberOfPieces={16} tweenDuration={400} colors={colors} gravity={0.02} friction={0.99} width={this.state.width - 15} height={765}/>
                     <div className="row">
                         <div className="col-md-6 offset-md-3 col-sm-12 offset-sm-0">
                             <div className="profile-avatar">
