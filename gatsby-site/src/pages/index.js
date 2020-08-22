@@ -3,15 +3,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Max from "../images/max-bw.png"
-import Confetti from "react-confetti"
+import WaterRowerVideo from "../videos/wr-connect-intro.mp4"
 
 class IndexPage extends React.Component {
     render() {
-        const colors = [
-            '#6FBFA2',
-            '#A61723'
-        ]
-
         return <Layout>
             <SEO title="Home"/>
             <section className="intro">
@@ -40,6 +35,27 @@ class IndexPage extends React.Component {
                     </div>
                     <div className="row">
                         <div className="col-12">
+                            <div className="case-panel">
+                                <div className="row">
+                                    <div className="col-12 col-md-6">
+                                        <div className="iphone-panel waterrower-video">
+                                            <video autoPlay={true} src={WaterRowerVideo} />
+                                            <div className="iphone-frame"></div>
+                                        </div>
+                                    </div>
+                                    <div className="col-12 col-md-6">
+                                        <h3>Refreshing home rowing experience.</h3>
+                                        <p className="company">Project at Label305</p>
+                                        <p className="paragraph">
+                                            The stylish rowing machines from <a href={''}>WaterRower</a> provide their customers with a unique experience. To further improve this experience, the WaterRower monitor can be connected to the WaterRower Connect app, turning a smartphone/tablet into a real-time performance monitor.
+                                        </p>
+                                        <p className="paragraph">
+                                            For this project, I designed the WaterRower Connect application from scratch. Following a iterative process, a creative, modern and refreshing user interface came to life.
+                                        </p>
+                                        <a className="btn btn-primary btn-video">Watch video</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
