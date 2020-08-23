@@ -145,7 +145,7 @@ class IndexPage extends React.Component {
                     <div className="row">
                         <div className="col-12 col-sm-8 offset-sm-2">
                             <div className="row">
-                                <div className="col-6">
+                                <div className="col-12 col-sm-6">
                                     <div className="panel">
                                         <img src={Max} className="avatar"/>
                                         <h3>Max van IJsselmuiden</h3>
@@ -156,30 +156,30 @@ class IndexPage extends React.Component {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-6">
+                                <div className="col-12 col-sm-6">
                                     <div className="panel">
-                                        <form action="">
+                                        <form id="contactForm" action="https://getform.io/f/20abbcd1-0d8c-4752-914c-226890f551be" method="POST">
                                             <div className="row">
                                                 <div className="col-12">
                                                     <div className="form-group">
-                                                        <label htmlFor="form-name">Name</label>
-                                                        <input id="form-name" type="text" className="form-control"  />
+                                                        <label htmlFor="name">Name</label>
+                                                        <input id="name" name="name" type="text" className="form-control"  />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="row">
                                                 <div className="col-12">
                                                     <div className="form-group">
-                                                        <label htmlFor="form-email">E-mail address</label>
-                                                        <input id="form-email" type="email" className="form-control"  />
+                                                        <label htmlFor="email">E-mail address</label>
+                                                        <input id="email" name="email" type="email" className="form-control"  />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="row">
                                                 <div className="col-12">
                                                     <div className="form-group">
-                                                        <label htmlFor="form-email">Message</label>
-                                                        <textarea id="form-message" className="form-control"  />
+                                                        <label htmlFor="message">Message</label>
+                                                        <textarea id="message" name="message" className="form-control"  />
                                                     </div>
                                                 </div>
                                             </div>
