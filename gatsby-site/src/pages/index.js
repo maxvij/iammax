@@ -183,6 +183,13 @@ class IndexPage extends React.Component {
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <div className="button-container">
+                                                        <button type="submit" className="btn btn-primary btn-send">Send</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>

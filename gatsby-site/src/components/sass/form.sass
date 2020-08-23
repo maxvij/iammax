@@ -8,6 +8,7 @@ body
         &.form-control
           &:focus
             background: $dm-input-bg-focus
+            color: $dm-primary-color
       textarea
         background: $dm-input-bg
 
@@ -30,17 +31,24 @@ form
         outline: none
         border: none
         box-shadow: none
+        color: $primary-color-dark
     &[type=text],&[type=email]
       border: none
       border-radius: 10px
       background: $input-bg
   textarea
     &.form-control
+      font-family: 'Open Sans', sans-serif
+      font-weight: 700
+      color: $primary-color-dark !important
       border: none
       border-radius: 10px
       background: $input-bg
       &:focus
         background: $input-bg-focus
+        color: $primary-color-dark
         outline: none
         border: none
         box-shadow: none
+  .button-container
+    text-align: center
