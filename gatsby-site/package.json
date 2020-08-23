@@ -16,6 +16,7 @@
     "gatsby-plugin-use-dark-mode": "^1.1.2",
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-sharp": "^2.3.19",
+    "include-media": "^1.4.9",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
