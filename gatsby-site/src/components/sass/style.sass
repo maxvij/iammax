@@ -1,20 +1,48 @@
 @import "fonts"
+@import "reset"
+@import "~include-media/dist/include-media"
 @import "variables"
 
 @import "sections/header"
 @import "sections/intro"
 @import "sections/work"
+@import "sections/contact"
+@import "sections/footer"
+
+@import "switch"
+@import "button"
+@import "link"
+@import "tags"
 
 h1
   font-family: 'Vollkorn', serif
   font-weight: 700
-  font-size: 64px
+  font-size: 36px
   margin: 10px 0
 
 body
+  &.dark-mode
+    transition: color, background .3s ease-in-out
+    *
+      transition: color, background .3s ease-in-out
+  &.light-mode
+    transition: color, background .3s ease-in-out
+    *
+      transition: color, background .3s ease-in-out
+
+body
   font-family: 'Vollkorn', serif
+  background: $white
+  &.dark-mode
+    background: $dm-white
 
   h2
     font-family: 'Vollkorn', serif
     font-weight: 700
-    font-size: 48px
+    text-align: center
+    margin: 60px 0 10px 0
+    font-size: 28px
+  p.subtitle
+    text-align: center
+    font-family: 'Open Sans', sans-serif
+    color: $gray

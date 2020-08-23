@@ -1,4 +1,7 @@
+const path = require('path')
+
 module.exports = {
+  pathPrefix: `/demo`,
   siteMetadata: {
     title: `Max.`,
     description: `Personal Portfolio of Max van IJsselmuiden, a versatile designer located in Groningen.`,
@@ -6,12 +9,31 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        "components": path.join(__dirname, "src/components"),
+        "layouts": path.join(__dirname, "src/layouts"),
+        "templates": path.join(__dirname, "src/templates"),
+        "scss": path.join(__dirname, "src/scss"),
+        "types": path.join(__dirname, "src/types"),
+        "src": path.join(__dirname, 'src'),
+        "pages": path.join(__dirname, 'src/pages')
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `videos`,
+        path: `${__dirname}/src/videos`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -28,8 +50,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-use-dark-mode",
+      options: {
+        classNameDark: "dark-mode",
+        classNameLight: "light-mode",
+        storageKey: "darkMode",
+        minify: true,
+      },
+    }
   ],
 }
