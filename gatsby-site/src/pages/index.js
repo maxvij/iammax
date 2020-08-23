@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Max from "../images/max-bw.png"
 import Coach from "../images/coach.png"
 import WaterRowerVideo from "../videos/wr-connect-intro.mp4"
+import Bike from "../images/bike.png"
 
 class IndexPage extends React.Component {
     render() {
@@ -49,6 +50,13 @@ class IndexPage extends React.Component {
                                     <div className="col-12 col-sm-6">
                                         <h3>A refreshing home rowing experience.</h3>
                                         <p className="company">Project at Label305</p>
+                                        <ul className="tags">
+                                            <li>App design</li>
+                                            <li>Animation</li>
+                                            <li>Prototyping</li>
+                                            <li>Ecosystem</li>
+                                            <li>Project management</li>
+                                        </ul>
                                         <p className="paragraph">
                                             The stylish rowing machines from <a href={''}>WaterRower</a> provide their customers with a unique experience. To further improve this experience, the WaterRower monitor can be connected to the WaterRower Connect app, turning a smartphone/tablet into a real-time performance monitor.
                                         </p>
@@ -74,10 +82,15 @@ class IndexPage extends React.Component {
                                         <h3>Enhancing unique fitness devices.</h3>
                                         <p className="company">Project at Label305</p>
                                         <p className="paragraph">Similar to the rowing machines from WaterRower, the German company NOhRD designs unique fitness devices made out of wood. </p>
+                                        <ul className="tags">
+                                            <li>App design</li>
+                                            <li>Animation</li>
+                                            <li>Prototyping</li>
+                                        </ul>
                                     </div>
                                     <div className="col-12 col-sm-6">
                                         <div className="iphone-panel nohrd-bike">
-                                            <video autoPlay="autoplay" loop={true} muted src={WaterRowerVideo} playsInline={true} />
+                                            <img src={Bike} title="Screenshot from the NOHrD Bike app." alt="Screenshot from the NOHrD Bike app."/>
                                             <div className="iphone-frame"> </div>
                                         </div>
                                     </div>
@@ -100,6 +113,13 @@ class IndexPage extends React.Component {
                                     <div className="col-12">
                                         <h3>In touch with a professional sports coach.</h3>
                                         <p className="company">Project at Label305</p>
+                                        <ul className="tags">
+                                            <li>Web design</li>
+                                            <li>Animation</li>
+                                            <li>Front-end development</li>
+                                            <li>Back-end development</li>
+                                            <li>React</li>
+                                        </ul>
                                         <p className="paragraph">
                                         </p>
                                     </div>
