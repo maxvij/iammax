@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -66,7 +67,7 @@ class IndexPage extends React.Component {
                                         </p>
                                         <div className="btn-container">
                                             {/*<a className="btn btn-primary btn-video">Watch video</a>*/}
-                                            <a className="btn btn-secondary" href="https://305.nl/en/portfolio/waterrower-connect-apps/" target="_blank" rel="noreferrer" title="Label305 - Case: Apps for WaterRower">View case at 305.nl</a>
+                                            <Link to="/cases/waterrower" className="btn btn-primary">View case</Link>
                                         </div>
                                     </div>
                                 </div>
