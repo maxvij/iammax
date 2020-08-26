@@ -27,29 +27,68 @@ section.work
   width: calc(100% + 60px)
   padding: 0 60px
   background: $white
-  .ipad-container
+  &.full-width
+    h3
+      width: 100%
+  .macbook-container
     border-top-left-radius: 20px
     border-top-right-radius: 20px
     height: 400px
     margin: -50px 0 0 0
     width: 100%
-    overflow: hidden
     &:before
       content: ""
       width: calc(100% + 90px)
       height: 100%
       position: absolute
-      background: $secondary-color-opaque
+      background: $secondary-color-opaque-dark
       top: 0
       bottom: 0
       z-index: 0
       border-top-left-radius: 20px
       border-top-right-radius: 20px
       left: -45px
+    .macbook-panel
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      top: -50px
+      height: 400px
+      overflow: hidden
+      img
+        z-index: 1
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        border-radius: 12px
+        border: 6px solid $black
+  .ipad-container
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    height: 400px
+    margin: 0 -60px -90px -60px
+    padding: 70px 0 0 0
+    transform: translateY(-90px)
+    width: calc(100% + 120px)
+    overflow: hidden
+    &:before
+      content: ""
+      width: 100%
+      height: 100%
+      position: absolute
+      background: $secondary-color-opaque
+      top: 90px
+      bottom: 0
+      z-index: 0
+      border-top-left-radius: 20px
+      border-top-right-radius: 20px
+      left: 0
   .ipad-panel
     margin: 0 90px
     position: relative
-    overflow: hidden
     .ipad-frame
       background: url('/images/ipad-frame.svg') no-repeat
       background-size: contain
@@ -66,6 +105,7 @@ section.work
       margin-left: 2.5%
       margin-top: 25px
       height: auto
+      box-shadow: 0 0 60px rgba(0,0,0,0.6)
       border-radius: 15px
   .iphone-panel
     margin: -20px 90px
@@ -76,12 +116,14 @@ section.work
       margin-top: 3%
       height: auto
       border-radius: 30px
+      box-shadow: 0 10px 60px rgba(0,0,0,0.6)
     video
       width: 88%
       margin-left: 6%
       margin-top: 4%
       height: auto
       border-radius: 30px
+      box-shadow: 0 10px 60px rgba(0,0,0,0.6)
     .iphone-frame
       background: url('/images/iphone-frame.svg') no-repeat
       background-size: contain
@@ -98,7 +140,7 @@ section.work
     font-size: 42px
     line-height: 36px
     margin: 60px 0 10px 0
-    width: 70%
+    width: 80%
   p
     font-family: 'Open Sans', sans-serif
     &.company
@@ -134,6 +176,18 @@ section.work
     .cross-bar
       &:after
         background: $color-coach
+  &.color-supporter
+    .cross-bar
+      &:after
+        background: $color-supporter !important
+  &.color-autosociaal
+    .cross-bar
+      &.after
+        background: $color-autosociaal
+  &.color-car
+    .cross-bar
+      &.after
+        background: $color-car
   .cross-bar
     position: absolute
     top: 60px
