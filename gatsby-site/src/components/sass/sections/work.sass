@@ -42,7 +42,7 @@ section.work
       background: $secondary-color-opaque
       top: 0
       bottom: 0
-      z-index: 1
+      z-index: 0
       border-top-left-radius: 20px
       border-top-right-radius: 20px
       left: -45px
@@ -73,7 +73,7 @@ section.work
     img
       width: 90%
       margin-left: 5%
-      margin-top: 6%
+      margin-top: 3%
       height: auto
       border-radius: 30px
     video
@@ -172,3 +172,28 @@ section.work
   .case-panel
     h3
       margin-top: 140px
+
+@include media ("<=medium")
+  section.work
+    padding: 60px 0
+    .cross-bar
+      opacity: 0
+      display: none
+  .case-panel
+    width: 100%
+    margin: 30px 0
+    h3
+      font-size: 18px
+      line-height: 18px
+      margin: 50px 0 10px 0
+    p.company
+      font-size: 12px
+    .iphone-panel
+      margin: 0 80px -20px 80px
+    .ipad-container
+      height: 200px
+      margin: -20px 0 0 0
+      .ipad-panel
+        margin: 0
+        img
+          margin-top: 10px

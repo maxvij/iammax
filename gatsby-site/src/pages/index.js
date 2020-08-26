@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -66,7 +67,7 @@ class IndexPage extends React.Component {
                                         </p>
                                         <div className="btn-container">
                                             {/*<a className="btn btn-primary btn-video">Watch video</a>*/}
-                                            <a className="btn btn-secondary" href="https://305.nl/en/portfolio/waterrower-connect-apps/" target="_blank" rel="noreferrer" title="Label305 - Case: Apps for WaterRower">View case at 305.nl</a>
+                                            <Link to="/cases/waterrower" className="btn btn-primary">View case</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -134,6 +135,67 @@ class IndexPage extends React.Component {
                     <div className="row">
                         <div className="col-12">
                             <h2>Get in touch.</h2>
+                            <p className="subtitle">Feel free to contact me anytime</p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="margin"> </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-12 col-sm-8 offset-sm-2">
+                            <div className="row">
+                                <div className="col-12 col-sm-6">
+                                    <div className="panel">
+                                        <img src={Max} className="avatar"/>
+                                        <h3>Max van IJsselmuiden</h3>
+                                        <p>Groningen, Netherlands</p>
+                                        <ul className="contact">
+                                            <li><a href="https://www.linkedin.com/in/maxvanijsselmuiden/" target="_blank">LinkedIn</a></li>
+                                            <li><a href="https://www.twitter.com/maxvij" target="_blank">Twitter</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-sm-6">
+                                    <div className="panel">
+                                        <form id="contactForm" action="https://getform.io/f/20abbcd1-0d8c-4752-914c-226890f551be" method="POST">
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <div className="form-group">
+                                                        <label htmlFor="name">Name</label>
+                                                        <input id="name" name="name" type="text" className="form-control"  />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <div className="form-group">
+                                                        <label htmlFor="email">E-mail address</label>
+                                                        <input id="email" name="email" type="email" className="form-control"  />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <div className="form-group">
+                                                        <label htmlFor="message">Message</label>
+                                                        <textarea id="message" name="message" className="form-control"  />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <div className="button-container">
+                                                        <button type="submit" className="btn btn-primary btn-send">Send</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>

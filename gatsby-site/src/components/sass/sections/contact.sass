@@ -1,5 +1,58 @@
+body
+  &.dark-mode
+    section.contact
+      background: $dm-secondary-color-opaque
+      transition: background .3s ease-in-out
+      h2
+        color: $dm-black
+      .panel
+        background: $dm-white
+        color: $dm-black
+
 section.contact
-  background: $white
-  margin-top: 60px
+  background: $secondary-color-opaque
+  transition: all .3s ease-in-out
+  padding-top: 60px
   box-sizing: border-box
   min-height: 900px
+  h2
+    color: $black
+  .margin
+    margin: 60px 0
+  .panel
+    background: $white
+    padding: 30px
+    border-radius: 20px
+    text-align: center
+    .avatar
+      border-radius: 50%
+      width: 96px
+      height: 96px
+      background: $primary-color
+    h3
+      font-weight: 700
+      font-family: 'Vollkorn', serif
+      font-size: 22px
+      margin: 5px 0
+    p
+      font-family: 'Open Sans', sans-serif
+      color: $gray
+      margin: 10px 0
+    ul.contact
+      li
+        line-height: 20px
+        padding: 5px
+        height: 30px
+        font-family: 'Open Sans', sans-serif
+    form
+      text-align: left
+
+@include media ("<=medium")
+  section.contact
+    padding-top: 20px
+    .margin
+      margin: 20px
+    h2
+      margin: 20px 0 10px 0
+    .panel
+      margin: 0 0 20px 0

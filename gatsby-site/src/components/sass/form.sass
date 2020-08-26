@@ -1,0 +1,54 @@
+body
+  &.dark-mode
+    form
+      input
+        color: $dm-primary-color
+        &[type=text],&[type=email]
+          background: $dm-input-bg
+        &.form-control
+          &:focus
+            background: $dm-input-bg-focus
+            color: $dm-primary-color
+      textarea
+        background: $dm-input-bg
+
+
+form
+  label
+    font-family: 'Open Sans', sans-serif
+    font-size: 14px
+    font-weight: 600
+    margin: 0 0 10px 0
+  input
+    font-family: 'Open Sans', sans-serif
+    &.form-control
+      font-weight: 700
+      color: $primary-color-dark
+      &:hover
+        background: $input-bg-focus
+      &:focus
+        background: $input-bg-focus
+        outline: none
+        border: none
+        box-shadow: none
+        color: $primary-color-dark
+    &[type=text],&[type=email]
+      border: none
+      border-radius: 10px
+      background: $input-bg
+  textarea
+    &.form-control
+      font-family: 'Open Sans', sans-serif
+      font-weight: 700
+      color: $primary-color-dark !important
+      border: none
+      border-radius: 10px
+      background: $input-bg
+      &:focus
+        background: $input-bg-focus
+        color: $primary-color-dark
+        outline: none
+        border: none
+        box-shadow: none
+  .button-container
+    text-align: center
