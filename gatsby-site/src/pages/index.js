@@ -3,6 +3,7 @@ import {Link} from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import LabelCompany from "../components/305";
 import Max from "../images/max-bw.png"
 import Coach from "../images/cases/coach/coach.png"
 import Autosociaal from "../images/cases/autosociaal/dashboard.png"
@@ -55,7 +56,7 @@ class IndexPage extends React.Component {
                                     </div>
                                     <div className="col-12 col-sm-6">
                                         <h3>A refreshing home rowing experience.</h3>
-                                        <p className="company">Project at Label305</p>
+                                        <LabelCompany />
                                         <ul className="tags">
                                             <li>App design</li>
                                             <li>Animation</li>
@@ -105,7 +106,7 @@ class IndexPage extends React.Component {
                                     </div>
                                     <div className="col-12">
                                         <h3>Connect with a professional sports coach.</h3>
-                                        <p className="company">Project at Label305</p>
+                                        <LabelCompany />
                                         <ul className="tags">
                                             <li>Web design</li>
                                             <li>Animation</li>
@@ -139,7 +140,7 @@ class IndexPage extends React.Component {
                                 <div className="row">
                                     <div className="col-12 col-sm-6">
                                         <h3>Cycling through the mountains at home.</h3>
-                                        <p className="company">Project at Label305</p>
+                                        <LabelCompany />
                                         <p className="paragraph">Similar to the rowing machines from WaterRower, the
                                             German company <a href="https://www.nohrd.com/" target="_blank" rel="noreferrer"
                                                title="NOHrD.com">NOHrD</a> designs unique fitness devices using high-quality materials. To extend the
@@ -181,7 +182,7 @@ class IndexPage extends React.Component {
                                     </div>
                                     <div className="col-12 col-sm-6">
                                         <h3>Support your amateur sport club.</h3>
-                                        <p className="company">Project at Label305</p>
+                                        <LabelCompany />
                                         <ul className="tags">
                                             <li>App design</li>
                                             <li>Animation</li>
@@ -216,7 +217,7 @@ class IndexPage extends React.Component {
                                     </div>
                                     <div className="col-12">
                                         <h3>Car garages management software.</h3>
-                                        <p className="company">Project at Label305</p>
+                                        <LabelCompany />
                                         <ul className="tags">
                                             <li>Web design</li>
                                             <li>Animation</li>
@@ -237,7 +238,7 @@ class IndexPage extends React.Component {
                                 <div className="row">
                                     <div className="col-12 col-sm-6">
                                         <h3>Roadtrip vibes.</h3>
-                                        <p className="company">Project at Label305</p>
+                                        <LabelCompany />
                                         <p className="paragraph">
                                             Unfortunately, I can not give away much about this project.
                                         </p>

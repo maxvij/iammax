@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import LabelCompany from "../../components/305";
 
 const CaseDetails = () => (
     <Layout>
@@ -11,8 +12,8 @@ const CaseDetails = () => (
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <h1>WaterRower</h1>
-                        <p className="subtitle">Case details</p>
+                        <h1>A refreshing home rowing experience.</h1>
+                        <LabelCompany />
                     </div>
                 </div>
             </div>
