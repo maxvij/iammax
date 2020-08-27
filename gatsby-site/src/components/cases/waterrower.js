@@ -40,7 +40,6 @@ const CaseWaterRower = (props) => {
                                 user experience.
                             </p>
                             <div className="btn-container">
-                                {/*<a className="btn btn-primary btn-video">Watch video</a>*/}
                                 <Link to="/cases/waterrower" className="btn btn-primary">View case</Link>
                             </div>
                         </div>
