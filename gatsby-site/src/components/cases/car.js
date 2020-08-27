@@ -1,6 +1,7 @@
 import React from "react"
 import LabelCompany from "../305";
 import CarDayTime from "../../videos/cases/car/day-time.mp4";
+import Tags from "../tags";
 
 const CaseCar = (props) => {
     return (
@@ -15,11 +16,7 @@ const CaseCar = (props) => {
                             <p className="paragraph">
                                 Unfortunately, I can not give away much about this project.
                             </p>
-                            <ul className="tags">
-                                <li>App design</li>
-                                <li>Animation</li>
-                                <li>Prototyping</li>
-                            </ul>
+                            <Tags tags={["App design", "Animation", "Prototyping"]} />
                         </div>
                         <div className="col-12 col-sm-6">
                             <div className="iphone-panel">

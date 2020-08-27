@@ -2,6 +2,7 @@ import React from "react"
 import WaterRowerVideo from "../../videos/cases/waterrower/wr-connect-intro.mp4";
 import LabelCompany from "../305";
 import {Link} from "gatsby";
+import Tags from "../tags";
 
 const CaseWaterRower = (props) => {
     return (
@@ -20,12 +21,7 @@ const CaseWaterRower = (props) => {
                         <div className="col-12 col-sm-6">
                             <h3>A refreshing home rowing experience.</h3>
                             <LabelCompany />
-                            <ul className="tags">
-                                <li>App design</li>
-                                <li>Animation</li>
-                                <li>Prototyping</li>
-                                <li>Project management</li>
-                            </ul>
+                            <Tags tags={["App design", "Animation", "Prototyping", "Project management"]} />
                             <p className="paragraph">
                                 The stylish rowing machines from <a href="https://www.waterrower.com/"
                                                                     target="_blank" rel="noreferrer"

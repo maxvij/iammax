@@ -1,6 +1,7 @@
 import React from "react"
 import LabelCompany from "../305";
 import Supporter from "../../videos/cases/sport/feed.mp4";
+import Tags from "../tags";
 
 const CaseSupporter = (props) => {
     return (
@@ -19,11 +20,7 @@ const CaseSupporter = (props) => {
                         <div className="col-12 col-sm-6">
                             <h3>Support your amateur sport club.</h3>
                             <LabelCompany />
-                            <ul className="tags">
-                                <li>App design</li>
-                                <li>Animation</li>
-                                <li>Prototyping</li>
-                            </ul>
+                            <Tags tags={["App design", "Animation", "Prototyping"]} />
                             <p className="paragraph">
                                 Unfortunately, I can not mention the name of the company that this app was designed for.
                                 The project has been discontinued, and the application never came to life.

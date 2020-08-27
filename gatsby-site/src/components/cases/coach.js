@@ -1,6 +1,7 @@
 import React from "react"
 import LabelCompany from "../305";
 import Coach from "../../images/cases/coach/coach.png";
+import Tags from "../tags";
 
 const CaseCoach = (props) => {
     return (
@@ -20,13 +21,7 @@ const CaseCoach = (props) => {
                         <div className="col-12">
                             <h3>Connect with a professional sports coach.</h3>
                             <LabelCompany />
-                            <ul className="tags">
-                                <li>Web design</li>
-                                <li>Animation</li>
-                                <li>Front-end development</li>
-                                <li>Back-end development</li>
-                                <li>React</li>
-                            </ul>
+                            <Tags tags={["Web design", "Animation", "Front-end development", "Back-end development", "React"]} />
                             <p className="paragraph">
                                 All NOHrD fitness devices, such as described in other cases such as the NOHrD
                                 Bike and the WaterRower, make use of a similar ideology - enhancing the

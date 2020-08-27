@@ -1,6 +1,7 @@
 import React from "react"
 import LabelCompany from "../305";
 import Bike from "../../images/cases/bike/bike.png";
+import Tags from "../tags";
 
 const CaseBike = (props) => {
     return (
@@ -21,11 +22,7 @@ const CaseBike = (props) => {
                                 When I was designing the NOHrD Bike app I wanted to 'do something different',
                                 and focused on creating animation-based interactions throughout the application.
                             </p>
-                            <ul className="tags">
-                                <li>App design</li>
-                                <li>Animation</li>
-                                <li>Prototyping</li>
-                            </ul>
+                            <Tags tags={["App design", "Animation", "Prototyping"]} />
                         </div>
                         <div className="col-12 col-sm-6">
                             <div className="iphone-panel nohrd-bike">
