@@ -1,3 +1,21 @@
+body
+  &.dark-mode
+    .case-details
+      p, h3, h2
+        color: $dm-black
+    .case-header
+      p, h2, h1
+        color: $dm-black
+      p.company
+        color: $dm-gray
+    .programs-container
+      background: $dm-gray-light
+      h2
+        color: $dm-black
+      ul.programs
+        li
+          color: $dm-black
+
 .case-header
   padding: 80px 0
   margin: 0 0 40px 0
@@ -51,6 +69,32 @@
     &.company
       position: absolute
       top: 20px
+.programs-container
+  margin: 20px 0 100px 0
+  padding: 40px
+  text-align: center
+  background: $gray-light
+  h2
+    margin: 0 0 30px 0
+  ul.programs
+    display: inline-block
+    text-align: center
+    li
+      position: relative
+      float: left
+      text-align: center
+      margin-right: 70px
+      padding-top: 80px
+      font-family: 'Open Sans', sans-serif
+      .icon
+        position: absolute
+        left: 50%
+        top: 0
+        transform: translateX(-50%)
+        background: $primary-color
+        border-radius: 50%
+        width: 64px
+        height: 64px
 
 @include media ("<=large")
   .case-details

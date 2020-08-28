@@ -78,6 +78,20 @@ const CaseDetails = () => (
                 </div>
                 <div className="row">
                     <div className="col-12">
+                        <div className="programs-container">
+                            <h2>Used tools and programs</h2>
+                            <ul className="programs">
+                                <li><span className="icon adobe-xd"></span>Adobe XD</li>
+                                <li><div className="icon adobe-ae"></div>After Effects</li>
+                                <li><div className="icon adobe-ps"></div>Photoshop</li>
+                                <li><div className="icon affinity"></div>Affinity Designer</li>
+                                <li><div className="icon ipad"></div>iPad Pro</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-12">
                         <div className="case-details color-waterrower right">
                             <div className="row">
                                 <div className="col-12 col-sm-6">
@@ -119,8 +133,16 @@ const CaseDetails = () => (
                                 <div className="col-12 col-sm-6">
                                     <h2>Track your progress.</h2>
                                     <p className="paragraph">
+                                        The app allows users to track their sportive activities, by indicating the
+                                        progress in a single workout, and simultaneously providing the option to view
+                                        progress over multiple workouts. The difference in split times of a workout can
+                                        best be transferred visually, as can be seen in the video close by.
                                     </p>
                                     <p className="paragraph">
+                                        Moreover, the app allows users to customize <i>what</i> and <i>when</i> they
+                                        would like to track. The app makes it easy to keep track of your weight, workout
+                                        intensity, or any custom variable over time. If desired, a custom note can be
+                                        added to each workout as well.
                                     </p>
                                 </div>
                             </div>
@@ -132,9 +154,13 @@ const CaseDetails = () => (
                         <div className="case-details color-waterrower right">
                             <div className="row">
                                 <div className="col-12 col-sm-6">
-                                    <h2>Settings.</h2>
+                                    <h2>Privacy first.</h2>
                                     <p className="paragraph">
-
+                                        The new GDPR rules are a important factor, and have to be taken into account
+                                        when designing and building applications. In the WaterRower app, users can
+                                        request deletion of the stored data. Besides this, the amount of data that is
+                                        stored is minimized as well. If the data is not relevant for the user, there is
+                                        no need to save it.
                                     </p>
                                     <p className="paragraph">
                                     </p>
