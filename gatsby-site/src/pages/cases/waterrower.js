@@ -129,11 +129,12 @@ const CaseDetails = () => (
                 </div>
                 <div className="row">
                     <div className="col-12">
-                        <div className="case-details color-waterrower">
+                        <div className="case-details color-waterrower right">
                             <div className="row">
                                 <div className="col-12 col-sm-6">
                                     <h2>Settings.</h2>
                                     <p className="paragraph">
+
                                     </p>
                                     <p className="paragraph">
                                     </p>

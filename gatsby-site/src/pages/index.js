@@ -3,14 +3,7 @@ import {Link} from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import LabelCompany from "../components/305";
 import Max from "../images/max-bw.png"
-import Coach from "../images/cases/coach/coach.png"
-import Autosociaal from "../images/cases/autosociaal/dashboard.png"
-import WaterRowerVideo from "../videos/cases/waterrower/wr-connect-intro.mp4"
-import CarDayTime from "../videos/cases/car/day-time.mp4"
-import Supporter from "../videos/cases/sport/feed.mp4"
-import Bike from "../images/cases/bike/bike.png"
 import CaseWaterRower from "../components/cases/waterrower";
 import CaseCoach from "../components/cases/coach";
 import CaseBike from "../components/cases/bike";
