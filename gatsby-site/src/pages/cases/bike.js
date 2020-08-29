@@ -18,7 +18,7 @@ const CaseDetails = () => (
                 <div className="row">
                     <div className="col-12 offset-0 col-sm-12 offset-sm-0 col-md-10 offset-md-1">
                         <div className="intro">
-                            <Link to="/" className="btn btn-primary btn-icon"><IosArrowBack/>Go back</Link>
+                            <Link to="/" className="btn btn-primary btn-icon btn-animate-left"><IosArrowBack/>Go back</Link>
                             <h1>Cycling through the mountains at home.</h1>
                             <Tags tags={["App design", "Animation", "Prototyping"]}/>
                             <p className="paragraph">

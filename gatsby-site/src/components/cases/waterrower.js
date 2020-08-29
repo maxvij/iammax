@@ -1,5 +1,6 @@
 import React from "react"
 import WaterRowerVideo from "../../videos/cases/waterrower/wr-connect-intro.mp4";
+import IosArrowForward from "react-ionicons/lib/IosArrowForward"
 import LabelCompany from "../305";
 import {Link} from "gatsby";
 import Tags from "../tags";
@@ -40,7 +41,7 @@ const CaseWaterRower = (props) => {
                                 user experience.
                             </p>
                             <div className="btn-container">
-                                <Link to="/cases/waterrower" className="btn btn-primary">View case</Link>
+                                <Link to="/cases/waterrower" className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>
                             </div>
                         </div>
                     </div>

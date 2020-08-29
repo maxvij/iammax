@@ -10,17 +10,24 @@
   background: $primary-color
   border: none
   transform: translateY(0)
-  perspective: 0
   border-radius: 20px
   box-shadow: 0 5px 10px $primary-color-opaque-dark
   transition: all .3s ease-in-out !important
   &:hover
-    background: $primary-color-dark
-    transform: translateY(-5px)
-    perspective: 50px
+    background: $primary-color-dark !important
     color: $white !important
     transition: all .3s ease-in-out !important
     box-shadow: none
+    &.btn-icon
+      &.btn-icon-right
+        &.btn-animate-right
+          svg
+            right: 5px
+            transition: all .3s ease-in-out
+      &.btn-animate-left
+        svg
+          left: 5px
+          transition: all .3s ease-in-out
   &:focus, &:hover
     box-shadow: none
     &:after
@@ -33,8 +40,14 @@
     background: $accent-color
   &.btn-icon
     padding: 10px 25px 10px 35px
+    &.btn-icon-right
+      padding: 10px 35px 10px 25px
+      svg
+        right: 15px
+        left: initial
     svg
       position: absolute
       left: 15px
       height: 20px
       fill: $white
+      transition: all .3s ease-in-out

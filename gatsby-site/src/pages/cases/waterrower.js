@@ -19,7 +19,7 @@ const CaseDetails = () => (
                 <div className="row">
                     <div className="col-12 col-sm-10 offset-sm-1">
                         <div className="intro">
-                            <Link to="/" className="btn btn-primary btn-icon"><IosArrowBack />Go back</Link>
+                            <Link to="/" className="btn btn-primary btn-icon btn-animate-left"><IosArrowBack />Go back</Link>
                             <h1>A refreshing home rowing experience.</h1>
                             <Tags tags={["App design", "Animation", "Prototyping", "Project management"]}/>
                             <p className="paragraph">
