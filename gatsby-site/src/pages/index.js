@@ -1,5 +1,4 @@
 import React from "react"
-import {Link} from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -73,13 +72,13 @@ class IndexPage extends React.Component {
                             <div className="row">
                                 <div className="col-12 col-sm-6">
                                     <div className="panel">
-                                        <img src={Max} className="avatar" loading="lazy"/>
+                                        <img src={Max} alt="Me." className="avatar" loading="lazy"/>
                                         <h3>Max van IJsselmuiden</h3>
                                         <p>Groningen, Netherlands</p>
                                         <ul className="contact">
                                             <li><a href="https://www.linkedin.com/in/maxvanijsselmuiden/"
-                                                   target="_blank">LinkedIn</a></li>
-                                            <li><a href="https://www.twitter.com/maxvij" target="_blank">Twitter</a>
+                                                   target="_blank" rel="noreferrer">LinkedIn</a></li>
+                                            <li><a href="https://www.twitter.com/maxvij" target="_blank" rel="noreferrer">Twitter</a>
                                             </li>
                                         </ul>
                                     </div>

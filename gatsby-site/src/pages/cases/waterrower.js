@@ -128,7 +128,7 @@ const CaseDetails = () => (
                                 </div>
                                 <div className="col-12 col-sm-6">
                                     <div className="iphone-panel waterrower-video">
-                                        <img src={Session} loading="lazy"/>
+                                        <img src={Session} loading="lazy" alt="Session view of the WaterRower Connect app."/>
                                         <div className="iphone-frame"></div>
                                     </div>
                                 </div>

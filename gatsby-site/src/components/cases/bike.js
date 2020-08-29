@@ -2,6 +2,7 @@ import React from "react"
 import LabelCompany from "../305";
 import Bike from "../../images/cases/bike/bike.png";
 import Tags from "../tags";
+import {Link} from "gatsby";
 
 const CaseBike = (props) => {
     return (
@@ -23,6 +24,9 @@ const CaseBike = (props) => {
                                 and focused on creating animation-based interactions throughout the application.
                             </p>
                             <Tags tags={["App design", "Animation", "Prototyping"]} />
+                            <div className="btn-container">
+                                <Link to="/cases/bike" className="btn btn-primary">View case</Link>
+                            </div>
                         </div>
                         <div className="col-12 col-sm-6">
                             <div className="iphone-panel nohrd-bike">
