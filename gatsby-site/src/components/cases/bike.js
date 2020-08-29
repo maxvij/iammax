@@ -3,6 +3,7 @@ import LabelCompany from "../305";
 import Bike from "../../images/cases/bike/bike.png";
 import Tags from "../tags";
 import {Link} from "gatsby";
+import IosArrowForward from "react-ionicons/lib/IosArrowForward";
 
 const CaseBike = (props) => {
     return (
@@ -25,7 +26,7 @@ const CaseBike = (props) => {
                             </p>
                             <Tags tags={["App design", "Animation", "Prototyping"]} />
                             <div className="btn-container">
-                                <Link to="/cases/bike" className="btn btn-primary">View case</Link>
+                                <Link to="/cases/bike" className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>
                             </div>
                         </div>
                         <div className="col-12 col-sm-6">
