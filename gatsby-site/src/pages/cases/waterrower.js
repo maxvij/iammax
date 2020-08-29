@@ -5,40 +5,42 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import LabelCompany from "../../components/305";
 import Intro from "../../videos/cases/waterrower/wr-connect-intro.mp4";
-import Interval from "../../images/cases/waterrower/interval.png";
-import Recommended from "../../images/cases/waterrower/recommended.png";
 import Workout from "../../videos/cases/waterrower/wr-connect-workout.mp4";
 import Settings from "../../videos/cases/waterrower/settings.mp4";
 import Session from "../../images/cases/waterrower/session.png";
 import Tags from "../../components/tags";
+import IosArrowBack from "react-ionicons/lib/IosArrowBack"
 
 const CaseDetails = () => (
     <Layout>
         <SEO title="WaterRower Case"/>
-        <div className="case-header">
+        <div className="case-header waterrower">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-                        <h1>A refreshing home rowing experience.</h1>
-                        <Tags tags={["App design", "Animation", "Prototyping", "Project management"]}/>
-                        <p className="paragraph">
-                            The stylish rowing machines from <a href="https://www.waterrower.com/"
-                                                                target="_blank" rel="noreferrer"
-                                                                title="WaterRower.com">WaterRower</a> provide
-                            their customers with a unique experience. To further improve this
-                            experience, the WaterRower monitor can be connected to the WaterRower
-                            Connect app, turning a smartphone/tablet into a real-time performance
-                            monitor.
-                        </p>
-                        <p className="paragraph">
-                            For this project, I designed the WaterRower Connect application for phone,
-                            tablet (iOS and Android) and Apple Watch. My personal goal for this project
-                            was to create a consistent flow throughout the application, providing a
-                            fluent
-                            and high-quality user experience. The end result: a creative and refreshing
-                            user experience.
-                        </p>
-                        <LabelCompany/>
+                    <div className="col-12 col-sm-10 offset-sm-1">
+                        <div className="intro">
+                            <Link to="/" className="btn btn-primary btn-icon"><IosArrowBack />Go back</Link>
+                            <h1>A refreshing home rowing experience.</h1>
+                            <Tags tags={["App design", "Animation", "Prototyping", "Project management"]}/>
+                            <p className="paragraph">
+                                The stylish rowing machines from <a href="https://www.waterrower.com/"
+                                                                    target="_blank" rel="noreferrer"
+                                                                    title="WaterRower.com">WaterRower</a> provide
+                                their customers with a unique experience. To further improve this
+                                experience, the WaterRower monitor can be connected to the WaterRower
+                                Connect app, turning a smartphone/tablet into a real-time performance
+                                monitor.
+                            </p>
+                            <p className="paragraph">
+                                For this project, I designed the WaterRower Connect application for phone,
+                                tablet (iOS and Android) and Apple Watch. My personal goal for this project
+                                was to create a consistent flow throughout the application, providing a
+                                fluent
+                                and high-quality user experience. The end result: a creative and refreshing
+                                user experience.
+                            </p>
+                            <LabelCompany/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -193,13 +195,6 @@ const CaseDetails = () => (
                 </div>
             </div>
         </section>
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <Link to="/">Go back</Link>
-                </div>
-            </div>
-        </div>
     </Layout>
 )
 

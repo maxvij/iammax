@@ -21,6 +21,8 @@
     color: $white !important
     transition: all .3s ease-in-out !important
     box-shadow: none
+  &:focus, &:hover
+    box-shadow: none
     &:after
       content: none
   &.btn-primary
@@ -29,3 +31,10 @@
   &.btn-secondary
     color: $white
     background: $accent-color
+  &.btn-icon
+    padding: 10px 25px 10px 35px
+    svg
+      position: absolute
+      left: 15px
+      height: 20px
+      fill: $white

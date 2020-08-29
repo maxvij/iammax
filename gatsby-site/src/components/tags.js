@@ -4,7 +4,7 @@ import React from "react"
 const Tags = ({tags}) => (
     <ul className="tags">
         {tags.map(tag => {
-            return <li>{tag}</li>
+            return <li key={tag}>{tag}</li>
         })}
     </ul>
 )
