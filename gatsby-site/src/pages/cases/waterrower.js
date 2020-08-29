@@ -101,11 +101,6 @@ const CaseDetails = () => (
                                     Affinity Designer<br/>
                                     <span className="description">Artwork</span>
                                 </li>
-                                <li>
-                                    <div className="icon ipad"></div>
-                                    iPad Pro<br/>
-                                    <span className="description">Sketching</span>
-                                </li>
                             </ul>
                         </div>
                     </div>

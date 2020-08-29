@@ -85,16 +85,30 @@ body
       text-align: center
       margin-right: 70px
       padding-top: 80px
+      line-height: 22px
       font-family: 'Open Sans', sans-serif
+      &:last-of-type
+        margin-right: 0
       .icon
         position: absolute
         left: 50%
         top: 0
         transform: translateX(-50%)
-        background: $primary-color
         border-radius: 50%
         width: 64px
         height: 64px
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: 70%
+        background-color: $primary-color
+        &.adobe-xd
+          background-image: url("../../images/icon-adobe-xd.svg")
+        &.adobe-ae
+          background-image: url("../../images/icon-adobe-ae.svg")
+        &.affinity
+          background-image: url("../../images/icon-affinity.svg")
+        &.adobe-ps
+          background-image: url("../../images/icon-adobe-ps.svg")
       .description
         font-weight: 300
         color: $gray
