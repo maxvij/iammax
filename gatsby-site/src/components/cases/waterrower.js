@@ -14,7 +14,7 @@ const CaseWaterRower = (props) => {
                         <div className="col-12 col-sm-6">
                             <div className="iphone-panel waterrower-video">
                                 <video autoPlay="autoplay" loop={true} muted src={WaterRowerVideo}
-                                       playsInline={true}/>
+                                       playsInline={true} loading="lazy"/>
                                 <div className="iphone-frame"></div>
                             </div>
                         </div>

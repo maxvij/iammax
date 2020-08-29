@@ -13,7 +13,7 @@ const CaseCoach = (props) => {
                             <div className="ipad-container">
                                 <div className="ipad-panel coach">
                                     <img src={Coach} title="Screenshot of the My-NOHrD environment."
-                                         alt="Screenshot of the My-NOHrD Environment."/>
+                                         alt="Screenshot of the My-NOHrD Environment." loading="lazy"/>
                                     <div className="ipad-frame"></div>
                                 </div>
                             </div>

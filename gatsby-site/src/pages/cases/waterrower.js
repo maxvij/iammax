@@ -81,11 +81,31 @@ const CaseDetails = () => (
                         <div className="programs-container">
                             <h2>Used tools and programs</h2>
                             <ul className="programs">
-                                <li><span className="icon adobe-xd"></span>Adobe XD</li>
-                                <li><div className="icon adobe-ae"></div>After Effects</li>
-                                <li><div className="icon adobe-ps"></div>Photoshop</li>
-                                <li><div className="icon affinity"></div>Affinity Designer</li>
-                                <li><div className="icon ipad"></div>iPad Pro</li>
+                                <li>
+                                    <span className="icon adobe-xd"></span>
+                                    Adobe XD<br/>
+                                    <span className="description">Wireframing</span>
+                                </li>
+                                <li>
+                                    <div className="icon adobe-ae"></div>
+                                    After Effects<br/>
+                                    <span className="description">Animations</span>
+                                </li>
+                                <li>
+                                    <div className="icon adobe-ps"></div>
+                                    Photoshop<br/>
+                                    <span className="description">Visuals</span>
+                                </li>
+                                <li>
+                                    <div className="icon affinity"></div>
+                                    Affinity Designer<br/>
+                                    <span className="description">Artwork</span>
+                                </li>
+                                <li>
+                                    <div className="icon ipad"></div>
+                                    iPad Pro<br/>
+                                    <span className="description">Sketching</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -111,7 +131,7 @@ const CaseDetails = () => (
                                 </div>
                                 <div className="col-12 col-sm-6">
                                     <div className="iphone-panel waterrower-video">
-                                        <img src={Session}/>
+                                        <img src={Session} loading="lazy"/>
                                         <div className="iphone-frame"></div>
                                     </div>
                                 </div>

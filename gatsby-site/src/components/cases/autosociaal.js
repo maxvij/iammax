@@ -13,7 +13,7 @@ const CaseAutoSociaal = (props) => {
                             <div className="macbook-container">
                                 <div className="macbook-panel autosociaal">
                                     <img src={Autosociaal} title="Screenshot of the Autosociaal environment."
-                                         alt="Screenshot of the Autosociaal environment."/>
+                                         alt="Screenshot of the Autosociaal environment." loading="lazy"/>
                                 </div>
                             </div>
                         </div>

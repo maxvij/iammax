@@ -27,7 +27,7 @@ const CaseBike = (props) => {
                         <div className="col-12 col-sm-6">
                             <div className="iphone-panel nohrd-bike">
                                 <img src={Bike} title="Screenshot from the NOHrD Bike app."
-                                     alt="Screenshot from the NOHrD Bike app."/>
+                                     alt="Screenshot from the NOHrD Bike app." loading="lazy"/>
                                 <div className="iphone-frame"></div>
                             </div>
                         </div>

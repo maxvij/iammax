@@ -26,7 +26,7 @@ class IndexPage extends React.Component {
                     <div className="row">
                         <div className="col-12 offset-0 col-md-4 offset-md-4">
                             <div className="profile-avatar">
-                                <img src={Max} alt="Me."/>
+                                <img src={Max} alt="Me." loading="lazy"/>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ class IndexPage extends React.Component {
                             <div className="row">
                                 <div className="col-12 col-sm-6">
                                     <div className="panel">
-                                        <img src={Max} className="avatar"/>
+                                        <img src={Max} className="avatar" loading="lazy"/>
                                         <h3>Max van IJsselmuiden</h3>
                                         <p>Groningen, Netherlands</p>
                                         <ul className="contact">
