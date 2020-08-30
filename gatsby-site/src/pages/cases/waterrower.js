@@ -117,7 +117,7 @@ const CaseDetails = () => (
                                         In the simplest case, when setting up a workout, users have to select either a
                                         time or distance which they would like to row. The set-up of such a simple
                                         workout is therefore relatively easy. During the design process of this
-                                        application I asked myself, "how can we make this more creative?".
+                                        application I asked myself "how can we make this more creative?".
                                     </p>
                                     <p className="paragraph">
                                         The solution I came up with is inspired by a cooking timer. When setting a

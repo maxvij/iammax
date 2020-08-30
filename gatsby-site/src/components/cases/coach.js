@@ -2,6 +2,8 @@ import React from "react"
 import LabelCompany from "../305";
 import Coach from "../../images/cases/coach/coach.png";
 import Tags from "../tags";
+import {Link} from "gatsby";
+import IosArrowForward from "react-ionicons/lib/IosArrowForward";
 
 const CaseCoach = (props) => {
     return (
@@ -35,6 +37,9 @@ const CaseCoach = (props) => {
                                 users can request a personal coach. The coach will support the users in their
                                 sportive goals and recommend workouts based on their preferences.
                             </p>
+                            <div className="btn-container">
+                                <Link to="/cases/coach" className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>
+                            </div>
                         </div>
                     </div>
                 </div>

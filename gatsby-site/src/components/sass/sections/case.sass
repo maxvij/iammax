@@ -36,6 +36,8 @@ body
     background: $color-waterrower
   &.color-bike
     background: $color-bike
+  &.color-coach
+    background: $color-coach
   .margin
     margin: 50px 0
   .intro
@@ -127,6 +129,9 @@ body
         box-shadow: 0 10px 50px rgba(0,0,0,0.3)
   .wide-bar
     position: relative
+    &.color-coach
+      &:after
+        background: $color-coach
     &.color-bike
       &:after
         background: $color-bike
@@ -191,6 +196,29 @@ body
         font-weight: 300
         color: $gray
         padding: 10px 0 0 0
+
+.step-container
+  position: relative
+  &:before
+    content: ""
+    width: 100%
+    height: 60%
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 0
+    right: 0
+    background: $primary-color
+    border-radius: 20px
+  &.color-coach
+    &:before
+      background: $color-coach
+  img
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2)
+    border-radius: 10px
+    margin: 10px
+    width: calc(100% - 20px)
+    height: auto
 
 @include media ("<=large")
   .case-details
