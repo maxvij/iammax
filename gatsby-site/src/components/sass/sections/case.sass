@@ -168,20 +168,19 @@ body
       top: 20px
 .programs-container
   margin: 20px 0 100px 0
-  padding: 40px
+  padding: 30px 100px 20px 100px
   text-align: center
   background: $gray-light
   border-radius: 20px
   h2
+    font-size: 26px
     margin: 0 0 30px 0
-  ul.programs
-    display: inline-block
+  .programs
     text-align: center
-    li
+    .program
       position: relative
-      float: left
       text-align: center
-      margin-right: 70px
+      margin-bottom: 20px
       padding-top: 80px
       line-height: 22px
       font-family: 'Open Sans', sans-serif
@@ -280,6 +279,10 @@ body
         margin-top: 10px
       img
         border-radius: 20px
+    .ipad-panel
+      margin: 0 20px
+  .programs-container
+    padding: 30px 20px 20px 20px
 
 @include media ("<small")
   .case-header
@@ -294,4 +297,5 @@ body
       video, img
         border-radius: 20px
   .programs-container
+    padding: 30px 20px 20px 20px
     margin: 20px 0 40px 0

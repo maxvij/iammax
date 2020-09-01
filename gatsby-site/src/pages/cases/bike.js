@@ -125,28 +125,38 @@ const CaseDetails = () => (
                     <div className="col-12">
                         <div className="programs-container">
                             <h2>Used tools and programs</h2>
-                            <ul className="programs">
-                                <li>
-                                    <span className="icon adobe-xd"></span>
-                                    Adobe XD<br/>
-                                    <span className="description">Wireframing</span>
-                                </li>
-                                <li>
-                                    <div className="icon adobe-ae"></div>
-                                    After Effects<br/>
-                                    <span className="description">Animations</span>
-                                </li>
-                                <li>
-                                    <div className="icon adobe-ps"></div>
-                                    Photoshop<br/>
-                                    <span className="description">Visuals</span>
-                                </li>
-                                <li>
-                                    <div className="icon affinity"></div>
-                                    Affinity Designer<br/>
-                                    <span className="description">Artwork</span>
-                                </li>
-                            </ul>
+                            <div className="programs">
+                                <div className="row">
+                                    <div className="col-6 col-sm-3">
+                                        <div className="program">
+                                            <span className="icon adobe-xd"></span>
+                                            Adobe XD<br/>
+                                            <span className="description">Wireframing</span>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-sm-3">
+                                        <div className="program">
+                                            <div className="icon adobe-ae"></div>
+                                            After Effects<br/>
+                                            <span className="description">Animations</span>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-sm-3">
+                                        <div className="program">
+                                            <div className="icon adobe-ps"></div>
+                                            Photoshop<br/>
+                                            <span className="description">Visuals</span>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-sm-3">
+                                        <div className="program">
+                                            <div className="icon affinity"></div>
+                                            Affinity Designer<br/>
+                                            <span className="description">Artwork</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

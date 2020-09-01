@@ -60,7 +60,7 @@ const CaseDetails = () => (
                                 </div>
                             </div>
                             <div className="row wide-bar color-edlink">
-                                <div className="col-12 col-sm-10 offset-sm-1">
+                                <div className="col-12 col-md-10 offset-md-1">
                                     <div className="ipad-panel no-radius">
                                         <img src={Dash} loading="lazy"
                                              alt="Screenshot of the dashboard view of the Edlink system."/>
@@ -88,7 +88,7 @@ const CaseDetails = () => (
                                 </div>
                             </div>
                             <div className="row wide-bar color-edlink">
-                                <div className="col-12 col-sm-10 offset-sm-1">
+                                <div className="col-12 col-md-10 offset-md-1">
                                     <div className="ipad-panel no-radius">
                                         <img src={Match} loading="lazy"
                                              alt="Screenshot of the 'matches' view of the Edlink system."/>
@@ -114,7 +114,7 @@ const CaseDetails = () => (
                                 </div>
                             </div>
                             <div className="row wide-bar color-edlink">
-                                <div className="col-12 col-sm-10 offset-sm-1">
+                                <div className="col-12 col-md-10 offset-md-1">
                                     <div className="ipad-panel no-radius">
                                         <img src={DataInControl} loading="lazy"
                                              alt="Screenshot of the filter options of the Edlink system."/>
@@ -124,27 +124,36 @@ const CaseDetails = () => (
                         </div>
                     </div>
                 </div>
+
                 <div className="row">
                     <div className="col-12">
                         <div className="programs-container">
                             <h2>Used tools and programs</h2>
-                            <ul className="programs">
-                                <li>
-                                    <span className="icon adobe-xd"></span>
-                                    Adobe XD<br/>
-                                    <span className="description">Wireframing</span>
-                                </li>
-                                <li>
-                                    <div className="icon adobe-ps"></div>
-                                    Photoshop<br/>
-                                    <span className="description">Visuals</span>
-                                </li>
-                                <li>
-                                    <div className="icon affinity"></div>
-                                    Affinity Designer<br/>
-                                    <span className="description">Artwork</span>
-                                </li>
-                            </ul>
+                            <div className="programs">
+                                <div className="row">
+                                    <div className="col-4">
+                                        <div className="program">
+                                            <span className="icon adobe-xd"></span>
+                                            Adobe XD<br/>
+                                            <span className="description">Wireframing</span>
+                                        </div>
+                                    </div>
+                                    <div className="col-4">
+                                        <div className="program">
+                                            <div className="icon adobe-ps"></div>
+                                            Photoshop<br/>
+                                            <span className="description">Visuals</span>
+                                        </div>
+                                    </div>
+                                    <div className="col-4">
+                                        <div className="program">
+                                            <div className="icon affinity"></div>
+                                            Affinity Designer<br/>
+                                            <span className="description">Artwork</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
