@@ -9,7 +9,7 @@ const CaseBike = (props) => {
     return (
         <div className="row has-bar color-bike">
             <div className="col-12">
-                <div className="case-panel color-bike">
+                <div className="case-panel color-bike right">
                     <div className="cross-bar right"></div>
                     <div className="row">
                         <div className="col-12 col-md-6 order-2 order-md-1">
