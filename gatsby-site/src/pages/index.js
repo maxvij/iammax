@@ -42,9 +42,9 @@ class IndexPage extends React.Component {
 
                     <CaseWaterRower />
 
-                    <CaseCoach />
-
                     <CaseBike />
+
+                    <CaseCoach />
 
                     <CaseCar />
 
