@@ -43,14 +43,12 @@ class IndexPage extends React.Component {
                                     <Lottie options={introAnim}
                                             height={117}
                                             width={384}
-                                            speed={0.5}
                                     />
                                 </div>
                                 <div className="anim-dark">
                                     <Lottie options={introAnimDark}
                                             height={117}
                                             width={384}
-                                            speed={0.5}
                                     />
                                 </div>
                             </div>
