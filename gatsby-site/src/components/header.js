@@ -7,14 +7,14 @@ const Header = ({siteTitle, handleTheme, darkMode}) => (
   <header>
     <div className="container">
       <div className="row">
-        <div className="col-10">
+        <div className="col-8">
           <h1 style={{margin: 0}}>
             <Link to="/">
               {siteTitle}
             </Link>
           </h1>
         </div>
-        <div className="col-2">
+        <div className="col-4">
           <DarkModeToggle darkMode={darkMode} onClick={handleTheme} />
         </div>
       </div>
