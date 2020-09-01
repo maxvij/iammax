@@ -12,7 +12,7 @@ const CaseBike = (props) => {
                 <div className="case-panel color-bike">
                     <div className="cross-bar right"></div>
                     <div className="row">
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 order-2 order-md-1">
                             <h3>Cycling through the mountains at home.</h3>
                             <LabelCompany />
                             <Tags tags={["App design", "Animation", "Prototyping"]} />
@@ -29,7 +29,7 @@ const CaseBike = (props) => {
                                 <Link to="/cases/bike" className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>
                             </div>
                         </div>
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 order-1 order-md-2">
                             <div className="iphone-panel nohrd-bike">
                                 <img src={Bike} title="Screenshot from the NOHrD Bike app."
                                      alt="Screenshot from the NOHrD Bike app." loading="lazy"/>

@@ -10,7 +10,7 @@ const CaseCar = (props) => {
                 <div className="case-panel color-car">
                     <div className="cross-bar right"></div>
                     <div className="row">
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 order-2 order-md-1">
                             <h3>Car industry project.</h3>
                             <LabelCompany/>
                             <Tags tags={["App design", "Animation", "Prototyping"]}/>
@@ -25,7 +25,7 @@ const CaseCar = (props) => {
                                 nighttime the animation transitions to nighttime.
                             </p>
                         </div>
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 order-1 order-md-2">
                             <div className="iphone-panel">
                                 <video autoPlay="autoplay" loop={true} muted src={CarDayTime}
                                        playsInline={true}/>
