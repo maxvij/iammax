@@ -3,23 +3,16 @@ body
     section.intro
       h1
         color: $dm-black
-      p.subtitle
-        color: $dm-black
 
 section.intro
   padding: 30px 0 0 0
   text-align: center
   overflow: hidden
   position: relative
+  h1
+    margin: 30px 0 -15px 0
   h1, p.subtitle
     z-index: 999 !important
-  p.subtitle
-    font-family: 'Open Sans', sans-serif
-    font-weight: 400
-    font-size: 26px
-    margin: 5px 0
-    line-height: 28px
-    color: $black
   .profile-avatar
     width: 100%
     height: calc(100% - 20px)
@@ -44,17 +37,18 @@ section.intro
   .animation-wrapper
     height: 120px
     position: relative
-    transition: none !important
     .anim-light, .anim-dark
       position: absolute
       left: 50%
       top: 0
       transform: translateX(-50%)
-      transition: none !important
+      transition: opacity .2s ease-in-out
     .anim-light
       opacity: 1
+      transition: opacity .2s ease-in-out
     .anim-dark
       opacity: 0
+      transition: opacity .2s ease-in-out
 body
   &.dark-mode
     .animation-wrapper
