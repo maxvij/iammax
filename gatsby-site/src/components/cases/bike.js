@@ -12,9 +12,10 @@ const CaseBike = (props) => {
                 <div className="case-panel color-bike">
                     <div className="cross-bar right"></div>
                     <div className="row">
-                        <div className="col-12 col-sm-6">
+                        <div className="col-12 col-md-6">
                             <h3>Cycling through the mountains at home.</h3>
                             <LabelCompany />
+                            <Tags tags={["App design", "Animation", "Prototyping"]} />
                             <p className="paragraph">Similar to the rowing machines from WaterRower, the
                                 German company <a href="https://www.nohrd.com/" target="_blank" rel="noreferrer"
                                                   title="NOHrD.com">NOHrD</a> designs unique fitness devices using high-quality materials. To extend the
@@ -24,12 +25,11 @@ const CaseBike = (props) => {
                                 When I was designing the NOHrD Bike app I wanted to 'do something different',
                                 and focused on creating animation-based interactions throughout the application.
                             </p>
-                            <Tags tags={["App design", "Animation", "Prototyping"]} />
                             <div className="btn-container">
                                 <Link to="/cases/bike" className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>
                             </div>
                         </div>
-                        <div className="col-12 col-sm-6">
+                        <div className="col-12 col-md-6">
                             <div className="iphone-panel nohrd-bike">
                                 <img src={Bike} title="Screenshot from the NOHrD Bike app."
                                      alt="Screenshot from the NOHrD Bike app." loading="lazy"/>

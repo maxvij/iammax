@@ -10,25 +10,25 @@ const CaseSupporter = (props) => {
                 <div className="case-panel color-supporter">
                     <div className="cross-bar"></div>
                     <div className="row">
-                        <div className="col-12 col-sm-6">
+                        <div className="col-12 col-md-6">
                             <div className="iphone-panel waterrower-video">
                                 <video autoPlay="autoplay" loop={true} muted src={Supporter}
                                        playsInline={true}/>
                                 <div className="iphone-frame"></div>
                             </div>
                         </div>
-                        <div className="col-12 col-sm-6">
+                        <div className="col-12 col-md-6">
                             <h3>Support your amateur sport club.</h3>
-                            <LabelCompany />
-                            <Tags tags={["App design", "Animation", "Prototyping"]} />
+                            <LabelCompany/>
+                            <Tags tags={["App design", "Animation", "Prototyping"]}/>
                             <p className="paragraph">
-                                Unfortunately, I can not mention the name of the company that this app was designed for.
-                                The project has been discontinued, and the application never came to life.
-                                Nevertheless, I am proud of the resulting design prototype after a creative design process.
+                                Similar to the car industry project, this project is yet to release. Therefore I can not
+                                mention the name of the company that this app was designed for, nor show any more
+                                details than the displayed video.
                             </p>
                             <p className="paragraph">
-                                The application would feature live scores of amateur football clubs, with a optional live stream of the match.
-
+                                The application would feature live scores of amateur football clubs, with a optional
+                                live stream of the match.
                             </p>
                         </div>
                     </div>

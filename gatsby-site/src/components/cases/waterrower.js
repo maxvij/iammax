@@ -12,15 +12,15 @@ const CaseWaterRower = (props) => {
                 <div className="case-panel color-waterrower">
                     <div className="cross-bar"></div>
                     <div className="row">
-                        <div className="col-12 col-sm-6">
+                        <div className="col-12 col-md-6">
                             <div className="iphone-panel waterrower-video">
                                 <video autoPlay="autoplay" loop={true} muted src={WaterRowerVideo}
                                        playsInline={true} loading="lazy"/>
                                 <div className="iphone-frame"></div>
                             </div>
                         </div>
-                        <div className="col-12 col-sm-6">
-                            <h3>A refreshing home rowing experience.</h3>
+                        <div className="col-12 col-md-6">
+                            <h3>A refreshing rowing experience.</h3>
                             <LabelCompany />
                             <Tags tags={["App design", "Animation", "Prototyping", "Project management"]} />
                             <p className="paragraph">
