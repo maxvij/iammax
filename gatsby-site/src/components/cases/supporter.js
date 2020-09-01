@@ -5,7 +5,7 @@ import Tags from "../tags";
 
 const CaseSupporter = (props) => {
     return (
-        <div className="row">
+        <div className="row has-bar color-supporter">
             <div className="col-12">
                 <div className="case-panel color-supporter">
                     <div className="cross-bar"></div>

@@ -7,7 +7,7 @@ import IosArrowForward from "react-ionicons/lib/IosArrowForward";
 
 const CaseBike = (props) => {
     return (
-        <div className="row">
+        <div className="row has-bar color-bike">
             <div className="col-12">
                 <div className="case-panel color-bike">
                     <div className="cross-bar right"></div>

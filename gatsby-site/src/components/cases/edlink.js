@@ -7,7 +7,7 @@ import IosArrowForward from "react-ionicons/lib/IosArrowForward";
 
 const CaseAutoSociaal = (props) => {
     return (
-        <div className="row">
+        <div className="row has-bar color-edlink">
             <div className="col-12">
                 <div className="case-panel color-edlink">
                     <div className="row">

@@ -7,7 +7,7 @@ import IosArrowForward from "react-ionicons/lib/IosArrowForward";
 
 const CaseCoach = (props) => {
     return (
-        <div className="row">
+        <div className="row has-bar color-coach right">
             <div className="col-12">
                 <div className="case-panel full-width color-coach">
                     <div className="row">

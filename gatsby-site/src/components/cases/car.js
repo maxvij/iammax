@@ -5,7 +5,7 @@ import Tags from "../tags";
 
 const CaseCar = (props) => {
     return (
-        <div className="row">
+        <div className="row has-bar color-car right">
             <div className="col-12">
                 <div className="case-panel color-car">
                     <div className="cross-bar right"></div>

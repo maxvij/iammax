@@ -125,9 +125,9 @@ section.work
       border-radius: 30px
       box-shadow: 0 10px 60px rgba(0,0,0,0.6)
     video
-      width: 88%
-      margin-left: 6%
-      margin-top: 4%
+      width: 87%
+      margin-left: 4.5%
+      margin-top: 15px
       height: auto
       border-radius: 30px
       box-shadow: 0 10px 60px rgba(0,0,0,0.6)
@@ -271,6 +271,40 @@ a.label305-logo
       &.right
         &:after
           top: -300px
+
+.row
+  &.has-bar
+    &:before
+      margin: 120px -9999rem
+      padding: 30px 9999rem
+      opacity: 0.1
+      background: $primary-color
+      outline-width: 1px
+      outline-style: solid
+    &.color-coach
+      &:before
+        background: $color-coach
+        outline-color: $color-coach-dark
+    &.color-waterrower
+      &:before
+        background: $color-waterrower
+        outline-color: $color-waterrower-dark
+    &.color-bike
+      &:before
+        background: $color-bike
+        outline-color: $color-bike-dark
+    &.color-supporter
+      &:before
+        background: $color-supporter
+        outline-color: $color-supporter-dark
+    &.color-edlink
+      &:before
+        background: $color-edlink
+        outline-color: $color-edlink-dark
+    &.color-car
+      &:before
+        background: $color-car
+        outline-color: $color-car-dark
 
 @include media (">large","<extralarge")
   .case-panel

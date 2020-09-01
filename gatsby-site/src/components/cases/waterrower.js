@@ -7,7 +7,7 @@ import Tags from "../tags";
 
 const CaseWaterRower = (props) => {
     return (
-        <div className="row">
+        <div className="row has-bar color-waterrower">
             <div className="col-12">
                 <div className="case-panel color-waterrower">
                     <div className="cross-bar"></div>
