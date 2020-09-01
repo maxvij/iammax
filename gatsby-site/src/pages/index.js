@@ -9,9 +9,28 @@ import CaseBike from "../components/cases/bike";
 import CaseAutoSociaal from "../components/cases/edlink";
 import CaseCar from "../components/cases/car";
 import Contact from "../components/contact";
+import Lottie from "react-lottie";
 
 class IndexPage extends React.Component {
     render() {
+        const introAnim = {
+            loop: true,
+            autoplay: true,
+            animationData: require('../animations/Intro.json'),
+            rendererSettings: {
+                preserveAspectRatio: 'xMidYMid slice'
+            }
+        };
+
+        const introAnimDark = {
+            loop: true,
+            autoplay: true,
+            animationData: require('../animations/Intro-white.json'),
+            rendererSettings: {
+                preserveAspectRatio: 'xMidYMid slice'
+            }
+        };
+
         return <Layout>
             <SEO title="Home"/>
             <section className="intro">
@@ -19,7 +38,20 @@ class IndexPage extends React.Component {
                     <div className="row">
                         <div className="col-12">
                             <h1>I'm Max.</h1>
-                            <p className="subtitle">A versatile designer <br/>located in Groningen.</p>
+                            <div className="animation-wrapper">
+                                <div className="anim-light">
+                                    <Lottie options={introAnim}
+                                            height={117}
+                                            width={384}
+                                    />
+                                </div>
+                                <div className="anim-dark">
+                                    <Lottie options={introAnimDark}
+                                            height={117}
+                                            width={384}
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="row">

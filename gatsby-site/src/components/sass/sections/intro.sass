@@ -41,6 +41,27 @@ section.intro
       float: left
       background: $primary-color
       border-radius: 50%
+  .animation-wrapper
+    height: 120px
+    position: relative
+    transition: none !important
+    .anim-light, .anim-dark
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translateX(-50%)
+      transition: none !important
+    .anim-light
+      opacity: 1
+    .anim-dark
+      opacity: 0
+body
+  &.dark-mode
+    .animation-wrapper
+      .anim-dark
+        opacity: 1
+      .anim-light
+        opacity: 0
 canvas
   z-index: -1 !important
 .row + canvas
