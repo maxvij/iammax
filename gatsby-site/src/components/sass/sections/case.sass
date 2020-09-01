@@ -8,6 +8,16 @@ body
         color: $dm-black
       p.company
         color: $dm-gray
+      &:before
+        background: $dm-white
+      .intro
+        background: $dm-white
+        &:before, &:after
+          border-bottom: 20px solid $dm-white
+        &:before
+          border-right: 20px solid $dm-white
+        &:after
+          border-left: 20px solid $dm-white
     .programs-container
       background: $dm-gray-light
       h2
@@ -15,6 +25,9 @@ body
       ul.programs
         li
           color: $dm-black
+          .description
+            color: $dm-black
+            opacity: 0.7
 
 .case-header
   padding: 80px 0 0 0

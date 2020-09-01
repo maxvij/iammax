@@ -9,15 +9,16 @@ body
       .case-panel
         background: $dm-white
         color: $dm-black
-        .iphone-panel
-          .iphone-frame
-            background: url('/images/iphone-frame-white.svg') no-repeat
-        .ipad-container
-          &:before
-            background: $dm-secondary-color-opaque
-          .ipad-panel
-            .ipad-frame
-              background: url('/images/ipad-frame-white.svg') no-repeat
+    .case-panel, .case-details
+      .iphone-panel
+        .iphone-frame
+          background: url('/images/iphone-frame-white.svg') no-repeat
+      .ipad-container
+        &:before
+          background: $dm-secondary-color-opaque
+        .ipad-panel
+          .ipad-frame
+            background: url('/images/ipad-frame-white.svg') no-repeat
 section.work
   background: $secondary-color
   padding-top: 20px
