@@ -6,7 +6,6 @@ import Max from "../images/max-bw.png"
 import CaseWaterRower from "../components/cases/waterrower";
 import CaseCoach from "../components/cases/coach";
 import CaseBike from "../components/cases/bike";
-import CaseSupporter from "../components/cases/supporter";
 import CaseAutoSociaal from "../components/cases/edlink";
 import CaseCar from "../components/cases/car";
 import Contact from "../components/contact";

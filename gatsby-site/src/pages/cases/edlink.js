@@ -32,6 +32,8 @@ const CaseDetails = () => (
                             </p>
                             <p className="paragraph">
                                 It was a challenge to design this project from scratch. For me, the most difficult
+                                aspect of this project was to visualize the extremely large amount of relevant
+                                information into an optimized, useful dashboard.
                             </p>
                             <LabelCompany/>
                         </div>
