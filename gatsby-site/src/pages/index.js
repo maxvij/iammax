@@ -25,7 +25,7 @@ class IndexPage extends React.Component {
                     <div className="row">
                         <div className="col-12 offset-0 col-md-4 offset-md-4">
                             <div className="profile-avatar">
-                                <img src={Max} alt="Me." loading="lazy"/>
+                                <img src={Max} alt="Me."/>
                             </div>
                         </div>
                     </div>
@@ -42,9 +42,9 @@ class IndexPage extends React.Component {
 
                     <CaseWaterRower />
 
-                    <CaseCoach />
-
                     <CaseBike />
+
+                    <CaseCoach />
 
                     <CaseCar />
 

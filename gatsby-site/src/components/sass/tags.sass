@@ -23,3 +23,11 @@ body
       li
         background: $dm-primary-color-opaque
         color: $dm-primary-color-dark
+
+@include media("<=medium")
+  ul.tags
+    margin: 0 0 10px 0
+    li
+      line-height: 20px
+      padding: 3px 10px
+      height: 26px
