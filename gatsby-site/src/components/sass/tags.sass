@@ -5,13 +5,21 @@ ul.tags
   margin: 0 0 20px 0
   li
     margin: 0 5px 5px 0
-    line-height: 20px
-    padding: 0 10px
-    height: 20px
-    font-size: 12px
+    line-height: 24px
+    padding: 3px 10px
+    height: 30px
+    font-size: 14px
     text-transform: uppercase
-    color: $gray
+    color: $primary-color-dark
     font-family: 'Open Sans', sans-serif
+    font-weight: 600
     float: left
-    border-radius: 10px
-    background: $gray-light
+    border-radius: 8px
+    background: $primary-color-opaque
+
+body
+  &.dark-mode
+    ul.tags
+      li
+        background: $dm-primary-color-opaque
+        color: $dm-primary-color-dark

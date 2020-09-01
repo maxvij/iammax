@@ -9,47 +9,94 @@ body
       .case-panel
         background: $dm-white
         color: $dm-black
-        .iphone-panel
-          .iphone-frame
-            background: url('/images/iphone-frame-white.svg') no-repeat
-        .ipad-container
-          &:before
-            background: $dm-secondary-color-opaque
-          .ipad-panel
-            .ipad-frame
-              background: url('/images/ipad-frame-white.svg') no-repeat
+    .case-panel, .case-details
+      .iphone-panel
+        .iphone-frame
+          background: url('/images/iphone-frame-white.svg') no-repeat
+      .ipad-container
+        &:before
+          background: $dm-secondary-color-opaque
+        .ipad-panel
+          .ipad-frame
+            background: url('/images/ipad-frame-white.svg') no-repeat
 section.work
   background: $secondary-color
-  padding-top: 64px
+  padding-top: 20px
+  margin-top: -20px
 .case-panel
   border-radius: 20px
-  margin: 60px -30px
+  margin: 70px -30px
   width: calc(100% + 60px)
   padding: 0 60px
   background: $white
-  .ipad-container
+.case-panel, .case-details
+  &.full-width
+    h3
+      width: 100%
+      margin: 70px 0 10px 0
+  .macbook-container
     border-top-left-radius: 20px
     border-top-right-radius: 20px
     height: 400px
     margin: -50px 0 0 0
     width: 100%
-    overflow: hidden
     &:before
       content: ""
       width: calc(100% + 90px)
       height: 100%
       position: absolute
-      background: $secondary-color-opaque
+      background: $secondary-color-opaque-dark
       top: 0
       bottom: 0
       z-index: 0
       border-top-left-radius: 20px
       border-top-right-radius: 20px
       left: -45px
-  .ipad-panel
-    margin: 0 90px
-    position: relative
+    .macbook-panel
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      top: -50px
+      height: 400px
+      overflow: hidden
+      img
+        z-index: 1
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        border-radius: 12px
+        border: 6px solid $black
+  .ipad-container
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    height: 400px
+    margin: 0 -60px -90px -60px
+    padding: 70px 0 0 0
+    transform: translateY(-90px)
+    width: calc(100% + 120px)
     overflow: hidden
+    &:before
+      content: ""
+      width: 100%
+      height: 100%
+      position: absolute
+      background: $secondary-color-opaque
+      top: 90px
+      bottom: 0
+      z-index: 0
+      border-top-left-radius: 20px
+      border-top-right-radius: 20px
+      left: 0
+  &.color-coach
+    .ipad-container
+      &:before
+        background: $color-coach !important
+  .ipad-panel
+    margin: 0 70px
+    position: relative
     .ipad-frame
       background: url('/images/ipad-frame.svg') no-repeat
       background-size: contain
@@ -66,9 +113,10 @@ section.work
       margin-left: 2.5%
       margin-top: 25px
       height: auto
+      box-shadow: 0 0 60px rgba(0,0,0,0.6)
       border-radius: 15px
   .iphone-panel
-    margin: -20px 90px
+    margin: -20px 70px
     position: relative
     img
       width: 90%
@@ -76,12 +124,14 @@ section.work
       margin-top: 3%
       height: auto
       border-radius: 30px
+      box-shadow: 0 10px 60px rgba(0,0,0,0.6)
     video
-      width: 88%
-      margin-left: 6%
-      margin-top: 4%
+      width: 87%
+      margin-left: 4.5%
+      margin-top: 15px
       height: auto
       border-radius: 30px
+      box-shadow: 0 10px 60px rgba(0,0,0,0.6)
     .iphone-frame
       background: url('/images/iphone-frame.svg') no-repeat
       background-size: contain
@@ -98,17 +148,9 @@ section.work
     font-size: 42px
     line-height: 36px
     margin: 60px 0 10px 0
-    width: 70%
+    width: 80%
   p
     font-family: 'Open Sans', sans-serif
-    &.company
-      position: absolute
-      top: 20px
-      color: $gray
-      text-transform: uppercase
-      line-height: 18px
-      font-size: 14px
-      font-weight: 400
     &.paragraph
       margin: 15px 0
       line-height: 22px
@@ -125,43 +167,66 @@ section.work
   &.color-waterrower
     .cross-bar
       &:after
-        background: $color-waterrower
+        border-left-color: $color-waterrower
   &.color-bike
     .cross-bar
       &:after
-        background: $color-bike
+        border-left-color: $color-bike
   &.color-coach
     .cross-bar
       &:after
-        background: $color-coach
+        border-left-color: $color-coach
+  &.color-supporter
+    .cross-bar
+      &:after
+        border-left-color: $color-supporter !important
+  &.color-edlink
+    .cross-bar
+      &.after
+        border-left-color: $color-edlink
+  &.color-car
+    .cross-bar
+      &.after
+        border-left-color: $color-car
   .cross-bar
     position: absolute
-    top: 60px
+    top: 70px
     left: -15px
-    bottom: 0
-    right: 0
-    width: 100%
-    height: 100%
-    overflow: hidden
+    width: 500px
+    height: 500px
     border-top-left-radius: 20px
+    overflow: hidden
     &:after
       content: ""
       position: absolute
-      width: 400px
-      height: 180%
-      bottom: 0
+      border-top: 500px solid transparent
+      border-bottom: 500px solid transparent
+      border-left-width: 500px
+      border-left-style: solid
+      border-left-color: $color-coach
+      top: 0
       left: 0
-      transform: rotate(45deg)
-      background: $primary-color
+      transform: translateY(-50%)
+      width: 0
+      height: 0
     &.right
-      border-top-left-radius: initial
-      border-top-right-radius: 20px
       right: -15px
       left: initial
+      border-top-right-radius: 20px
       &:after
-        transform: rotate(-45deg)
-        left: initial
         right: 0
+        top: -500px
+        left: initial
+        transform: scaleX(-1)
+
+a.label305-logo
+  color: transparent !important
+  background-position: center
+  padding: 0 2px 2px 2px
+  background-repeat: no-repeat
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCA1OTQgOTAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxLjQxNDIxIj48ZyBpZD0idGhlLWxvZ28iPjxwYXRoIGlkPSJTaGFwZSIgZD0iTTQwNC45LDYxLjFjMCw1LjkgMy45LDguNSA5LjgsOC41YzUuOSwwIDkuMiwtNC42IDkuOCwtMTAuNWMtMC43LC0xMi41IC0xMi41LC0xMS44IC0yMS43LC0xMS44bDAsLTIuNmwxMS4yLC0yMy42bC0yNC45LDBsMCwtMTkuN2w1NC41LDBsMCwzLjNsLTE1LjgsMjguOWMxMy44LDMuMyAxNy43LDE0LjQgMTcuNywyNS42YzAsMTQuNCAtMTAuNSwzMC4yIC0zMC4yLDMwLjJjLTYuNiwwIC0xMS4yLC0xLjMgLTE1LjgsLTMuM2MtNy45LC00LjYgLTE0LjQsLTEzLjEgLTE0LjQsLTI0LjNjNy40LC0wLjcgMTMuOSwtMC43IDE5LjgsLTAuN1oiIHN0eWxlPSJmaWxsOiMwMWUxZGQ7ZmlsbC1ydWxlOm5vbnplcm8iLz48cGF0aCBpZD0iU2hhcGUxIiBzZXJpZjppZD0iU2hhcGUiIGQ9Ik01MjEuOCwyOS42YzAsOS44IDAsMjAuMyAwLDMwLjJjMCwxOSAtMTQuNCwyOS41IC0zMi44LDI5LjVjLTE3LjEsMCAtMzIuMiwtMTAuNSAtMzIuMiwtMjkuNWMwLC05LjggMCwtMjAuMyAwLC0zMC4yYzAsLTE5IDE0LjQsLTI5LjUgMzIuMiwtMjkuNWMxOC4zLDAgMzIuOCwxMC41IDMyLjgsMjkuNVptLTIwLjQsMmMwLC05LjIgMCw3LjkgMCwtMS4zYzAsLTYuNiAtNS4zLC0xMC41IC0xMS44LC0xMC41Yy02LjYsMCAtMTEuMiwzLjMgLTExLjIsMTAuNWMwLDkuMiAwLC03LjkgMCwxLjNjMCw2LjYgNS4zLDEwLjUgMTEuMiwxMC41YzYuNiwwIDExLjgsLTMuMyAxMS44LC0xMC41WiIgc3R5bGU9ImZpbGw6IzAxZTFkZDtmaWxsLXJ1bGU6bm9uemVybyIvPjxwYXRoIGlkPSJTaGFwZTIiIHNlcmlmOmlkPSJTaGFwZSIgZD0iTTU1My45LDMxYzE5LjcsLTEuMyAzOS40LDMuMyAzOS40LDI4LjJjMC43LDE0LjQgLTEwLjUsMzAuMiAtMzAuMiwzMC4yYy0xNi40LDAgLTI4LjIsLTEwLjUgLTI4LjksLTI4LjJsMTksMGMwLjcsNS45IDMuOSw4LjUgOS44LDguNWM1LjksMCA5LjgsLTMuMyA5LjgsLTEwLjVjLTAuNywtNS4zIC0zLjMsLTcuOSAtNy45LC05LjJjLTguNSwtMi42IC0yMywtMC43IC0yOS41LC0wLjdsMCwtNDcuOWw1My44LDBsMCwxOWwtMzUuNCwwbDAsMTAuNmwwLjEsMFoiIHN0eWxlPSJmaWxsOiMwMWUxZGQ7ZmlsbC1ydWxlOm5vbnplcm8iLz48cGF0aCBpZD0iU2hhcGUzIiBzZXJpZjppZD0iU2hhcGUiIGQ9Ik0xOSw3Mi4zbDM2LjEsMGwwLDE3LjFsLTU1LjEsMGwwLC04Ny4zbDE5LDBsMCw3MC4yWiIgc3R5bGU9ImZpbGw6IzM4MzgzODtmaWxsLXJ1bGU6bm9uemVybyIvPjxwYXRoIGlkPSJTaGFwZTQiIHNlcmlmOmlkPSJTaGFwZSIgZD0iTTkwLjYsNzQuM2wtNy4yLDE0LjRsLTE5LjcsMGwwLC0yLjZsNDEuMywtODUuM2w4LjUsMGw0MCw4NmwwLDIuNmwtMTkuNywwbC02LjYsLTE0LjRsLTM2LjYsLTAuN1ptNi41LC0xNS44bDI0LjMsMGwtMTEuOCwtMjguOWwtMTIuNSwyOC45WiIgc3R5bGU9ImZpbGw6IzM4MzgzODtmaWxsLXJ1bGU6bm9uemVybyIvPjxwYXRoIGlkPSJTaGFwZTUiIHNlcmlmOmlkPSJTaGFwZSIgZD0iTTIxOS4yLDQ0LjFjNy45LDMuMyAxMi41LDEwLjUgMTIuNSwxOS43YzAsMTUuOCAtOS44LDI1LjYgLTI3LjYsMjUuNmwtNDAuNywwbDAsLTg3LjNsMzcuNCwwYzE2LjQsMCAyNy42LDkuOCAyNy42LDI1LjZjLTAuNyw2LjUgLTMuOSwxMi40IC05LjIsMTYuNFptLTM3LjQsLTI2LjNsMCwxOS43bDE3LjEsMGM2LjYsMCAxMC41LC0zLjMgMTAuNSwtOS4yYzAsLTYuNiAtMy45LC0xMC41IC0xMC41LC0xMC41bC0xNy4xLDBabTAsMzQuOGwwLDE5LjdsMjEsMGM2LjYsMCA5LjgsLTMuOSAxMC41LC05LjhjMCwtMy4zIC0xLjMsLTYuNiAtMy45LC04LjVjLTIsLTEuMyAtNC42LC0yIC03LjIsLTJsLTIwLjMsMGwwLDAuNmwtMC4xLDBaIiBzdHlsZT0iZmlsbDojMzgzODM4O2ZpbGwtcnVsZTpub256ZXJvIi8+PHBhdGggaWQ9IlNoYXBlNiIgc2VyaWY6aWQ9IlNoYXBlIiBkPSJNMzAwLjYsMTcuOGwtMzQuOCwwbDAsMTcuN2wzMi44LDBsMCwxNi40bC0zMi44LDBsMCwxOS43bDM2LjEsMGwwLDE3LjFsLTU1LjEsMGwwLC04Ny4zbDUzLjgsMGwwLDE2LjRaIiBzdHlsZT0iZmlsbDojMzgzODM4O2ZpbGwtcnVsZTpub256ZXJvIi8+PHBhdGggaWQ9IlNoYXBlNyIgc2VyaWY6aWQ9IlNoYXBlIiBkPSJNMzM3LjMsNzIuM2wzNi44LDBsMCwxNy4xbC01NS4xLDBsMCwtODcuOWwxOSwwbDAsNzAuOWwtMC43LDBsMCwtMC4xWiIgc3R5bGU9ImZpbGw6IzM4MzgzODtmaWxsLXJ1bGU6bm9uemVybyIvPjwvZz48L3N2Zz4=)
+  &:after
+    border: none !important
 
 @include media(">=small","<large")
   .case-panel
@@ -176,9 +241,6 @@ section.work
 @include media ("<=medium")
   section.work
     padding: 60px 0
-    .cross-bar
-      opacity: 0
-      display: none
   .case-panel
     width: 100%
     margin: 30px 0
@@ -197,3 +259,84 @@ section.work
         margin: 0
         img
           margin-top: 10px
+
+@include media ("<large")
+  .case-panel
+    .cross-bar
+      width: 300px
+      height: 300px
+      &:after
+        border-top: 300px solid transparent
+        border-bottom: 300px solid transparent
+        border-left-width: 300px
+      &.right
+        &:after
+          top: -300px
+
+.row
+  &.has-bar
+    &:before
+      margin: 120px -9999rem
+      padding: 30px 9999rem
+      opacity: 0.1
+      background: $primary-color
+      outline-width: 1px
+      outline-style: solid
+    &.color-coach
+      &:before
+        background: $color-coach
+        outline-color: $color-coach-dark
+    &.color-waterrower
+      &:before
+        background: $color-waterrower
+        outline-color: $color-waterrower-dark
+    &.color-bike
+      &:before
+        background: $color-bike
+        outline-color: $color-bike-dark
+    &.color-supporter
+      &:before
+        background: $color-supporter
+        outline-color: $color-supporter-dark
+    &.color-edlink
+      &:before
+        background: $color-edlink
+        outline-color: $color-edlink-dark
+    &.color-car
+      &:before
+        background: $color-car
+        outline-color: $color-car-dark
+
+@include media (">large","<extralarge")
+  .case-panel
+    width: 100%
+    margin: 70px 0
+    padding: 0 30px
+    .cross-bar
+      width: 400px
+      height: 400px
+      left: 15px
+      &:after
+        border-top: 400px solid transparent
+        border-bottom: 400px solid transparent
+        border-left-width: 400px
+      &.right
+        right: 15px
+        &:after
+          top: -400px
+    .ipad-container
+      width: calc(100% + 60px)
+      margin: 0 -30px -90px -30px
+      .ipad-panel
+        img
+          margin-top: 20px
+          border-radius: 10px
+    .macbook-container
+      width: 100%
+      &:before
+        width: calc(100% + 30px)
+        left: -15px
+    h3
+      margin: 160px 0 10px 0
+    .iphone-panel
+      margin: -30px 10px
