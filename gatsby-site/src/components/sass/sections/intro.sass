@@ -37,12 +37,14 @@ section.intro
   .animation-wrapper
     height: 120px
     position: relative
+    pointer-events: none
     .anim-light, .anim-dark
       position: absolute
       left: 50%
       top: 0
       transform: translateX(-50%)
       transition: opacity .2s ease-in-out
+      pointer-events: none
     .anim-light
       opacity: 1
       transition: opacity .2s ease-in-out

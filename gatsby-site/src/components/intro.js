@@ -32,12 +32,14 @@ const Intro = (props) => {
                                 <Lottie options={introAnim}
                                         height={117}
                                         width={384}
+                                        isClickToPauseDisabled={true}
                                 />
                             </div>
                             <div className="anim-dark">
                                 <Lottie options={introAnimDark}
                                         height={117}
                                         width={384}
+                                        isClickToPauseDisabled={true}
                                 />
                             </div>
                         </div>
