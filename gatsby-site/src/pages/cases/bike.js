@@ -18,7 +18,8 @@ const CaseDetails = () => (
                 <div className="row">
                     <div className="col-12 offset-0 col-sm-12 offset-sm-0 col-md-10 offset-md-1">
                         <div className="intro">
-                            <Link to="/" className="btn btn-primary btn-icon btn-animate-left"><IosArrowBack/>Go back</Link>
+                            <Link to="/" className="btn btn-primary btn-icon btn-animate-left"><IosArrowBack/>Go
+                                back</Link>
                             <h1>Cycling through the mountains at home.</h1>
                             <Tags tags={["App design", "Animation", "Prototyping"]}/>
                             <p className="paragraph">
@@ -60,9 +61,6 @@ const CaseDetails = () => (
                                         for the app, reflecting the high-quality standards that the NOHrD company has
                                         set for their products.
                                     </p>
-                                    <p className="paragraph">
-                                        The creative animations in this design give the app a finishing touch.
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -98,15 +96,11 @@ const CaseDetails = () => (
                         <div className="case-details color-bike full-width">
                             <div className="row">
                                 <div className="col-12">
-                                    <h2>Something different.</h2>
+                                    <h2>Stay motivated.</h2>
                                     <p className="paragraph">
-                                        The combination of the phone/tablet app and the NOHrD Bike provides an
-                                        experience that is truly special. I wanted to create unique interface elements
-                                        for the app, reflecting the high-quality standards that the NOHrD company has
-                                        set for their products.
-                                    </p>
-                                    <p className="paragraph">
-                                        The creative animations in this design give the app a finishing touch.
+                                        Gamification elements such as <i>achievements</i> and <i>trends</i> are great
+                                        motivators for users to continue using the app. These elements are very common
+                                        in sports-related applications and have shown to do their job.
                                     </p>
                                 </div>
                             </div>
