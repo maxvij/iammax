@@ -9,8 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import {useStaticQuery, graphql} from "gatsby"
 import useDarkMode from "use-dark-mode";
-
 import Header from "./header"
+import IosArrowUp from "react-ionicons/lib/IosArrowUp"
 
 // CSS imports
 import "./sass/layout.css"
@@ -28,6 +28,15 @@ const Layout = ({children}) => {
     }
   `);
 
+  function scrollUp() {
+    var doc = document.documentElement;
+    var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0)
+    if (top > 0) {
+      window.scrollTo(0, top - 15)
+      setTimeout(scrollUp, 1)
+    }
+  }
+
   const darkMode = useDarkMode(false);
 
   const handleTheme = theme => theme === "dark" ? darkMode.enable() : darkMode.disable();
@@ -35,7 +44,16 @@ const Layout = ({children}) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} darkMode={darkMode} handleTheme={handleTheme}/>
-      <main>{children}</main>
+      <main>
+        {children}
+        <div className="container center">
+          <div className="row">
+            <div className="col-12">
+              <a className="btn btn-move-top btn-icon btn-animate-up" onClick={scrollUp}><IosArrowUp />Back to top</a>
+            </div>
+          </div>
+        </div>
+      </main>
       <footer>
         <div className="container">
           <div className="row">
