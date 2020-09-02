@@ -1,3 +1,16 @@
+body
+  &.dark-mode
+    section.about-me
+      h2, p.subtitle
+        color: $dm-black
+      .panel
+        background: $dm-secondary-color
+        h1, h2, h3, p
+          color: $dm-black
+        .skills
+          p.description
+            color: $gray-light
+
 section.about-me
   p.subtitle
     margin-bottom: 60px
@@ -5,7 +18,7 @@ section.about-me
     background: $white
     padding: 30px
     border-radius: 20px
-    margin-bottom: 60px
+    margin-bottom: 90px
     .profile-avatar-container
       display: flex
       justify-content: center
