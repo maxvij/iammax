@@ -9,6 +9,7 @@ import CaseAutoSociaal from "../components/cases/edlink";
 import CaseCar from "../components/cases/car";
 import Contact from "../components/contact";
 import Intro from "../components/intro";
+import About from "../components/about";
 
 class IndexPage extends React.Component {
     render() {
@@ -38,6 +39,7 @@ class IndexPage extends React.Component {
 
                 </div>
             </section>
+            <About />
             <Contact />
         </Layout>
 
