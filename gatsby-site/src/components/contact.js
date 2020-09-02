@@ -1,5 +1,6 @@
 import React from "react"
 import Max from "../images/max-bw.png";
+import IosArrowForward from "react-ionicons/lib/IosArrowForward"
 
 const Contact = (props) => {
     return (
@@ -42,7 +43,7 @@ const Contact = (props) => {
                                                 <div className="form-group">
                                                     <label htmlFor="name">Name</label>
                                                     <input id="name" name="name" type="text"
-                                                           className="form-control"/>
+                                                           className="form-control" placeholder="Barack"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -51,7 +52,7 @@ const Contact = (props) => {
                                                 <div className="form-group">
                                                     <label htmlFor="email">E-mail address</label>
                                                     <input id="email" name="email" type="email"
-                                                           className="form-control"/>
+                                                           className="form-control" placeholder="b.obama@whitehouse.gov"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -59,7 +60,7 @@ const Contact = (props) => {
                                             <div className="col-12">
                                                 <div className="form-group">
                                                     <label htmlFor="message">Message</label>
-                                                    <textarea id="message" name="message" className="form-control"/>
+                                                    <textarea id="message" name="message" className="form-control" placeholder="Hey Max! Long time no see."/>
                                                 </div>
                                             </div>
                                         </div>
@@ -67,7 +68,7 @@ const Contact = (props) => {
                                             <div className="col-12">
                                                 <div className="button-container">
                                                     <button type="submit"
-                                                            className="btn btn-primary btn-send">Send
+                                                            className="btn btn-primary btn-icon btn-animate-right btn-icon-right btn-send">Send<IosArrowForward />
                                                     </button>
                                                 </div>
                                             </div>
