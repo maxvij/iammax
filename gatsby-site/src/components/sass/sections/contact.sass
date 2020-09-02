@@ -28,7 +28,7 @@ section.contact
       border-radius: 50%
       width: 96px
       height: 96px
-      background: $primary-color
+      background: $secondary-color
     h3
       font-weight: 700
       font-family: 'Vollkorn', serif
@@ -38,12 +38,25 @@ section.contact
       font-family: 'Open Sans', sans-serif
       color: $gray
       margin: 10px 0
-    ul.contact
-      li
-        line-height: 20px
-        padding: 5px
-        height: 30px
+    .contact-container
+      display: flex
+      justify-content: center
+      margin-top: 20px
+      a
+        height: 40px
+        line-height: 40px
+        margin-right: 5px
+        text-align: center
+        width: 40px
         font-family: 'Open Sans', sans-serif
+        background: $primary-color
+        border-radius: 50%
+        &:hover, &:focus
+          background: $primary-color-dark
+          &:after
+            content: none
+        svg
+          fill: $white
     form
       text-align: left
 

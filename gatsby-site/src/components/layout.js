@@ -59,9 +59,10 @@ const Layout = ({children}) => {
           <div className="row">
             <div className="col-12">
               <p>
-                © {new Date().getFullYear()}, Max van IJsselmuiden. Built with
+                © {new Date().getFullYear()} Max van IJsselmuiden, indicated projects copyrighted by  <a href="https://www.305.nl/en/">Label305</a>. Built with
                 {` `}
-                <a href="https://www.gatsbyjs.org">Gatsby</a>
+                <a href="https://www.gatsbyjs.org">Gatsby</a> and{` `}
+                <a href="https://airbnb.design/lottie/">Lottie</a>.
               </p>
             </div>
           </div>
