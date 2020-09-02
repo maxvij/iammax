@@ -29,7 +29,7 @@ const About = (props) => {
                                 ready to take on new challenges.
                             </p>
                             <div className="btn-container center">
-                                <a href="#" className="btn btn-center btn-primary btn-icon btn-animate-down"><IosCloudDownload />Download my resumé</a>
+                                <a href="#" className="btn btn-center btn-primary btn-icon btn-animate-down"><IosCloudDownload />Download resumé</a>
                             </div>
                         </div>
                     </div>

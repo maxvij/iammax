@@ -1,6 +1,8 @@
 import React from "react"
 import Max from "../images/max-bw.png";
 import IosArrowForward from "react-ionicons/lib/IosArrowForward"
+import LogoLinkedin from "react-ionicons/lib/LogoLinkedin"
+import LogoTwitter from "react-ionicons/lib/LogoTwitter"
 
 const Contact = (props) => {
     return (
@@ -25,12 +27,11 @@ const Contact = (props) => {
                                     <img src={Max} alt="Me." className="avatar" loading="lazy"/>
                                     <h3>Max van IJsselmuiden</h3>
                                     <p>Groningen, Netherlands</p>
-                                    <ul className="contact">
-                                        <li><a href="https://www.linkedin.com/in/maxvanijsselmuiden/"
-                                               target="_blank" rel="noreferrer">LinkedIn</a></li>
-                                        <li><a href="https://www.twitter.com/maxvij" target="_blank" rel="noreferrer">Twitter</a>
-                                        </li>
-                                    </ul>
+                                    <div className="contact-container">
+                                        <a href="https://www.linkedin.com/in/maxvanijsselmuiden/"
+                                               target="_blank" rel="noreferrer"><LogoLinkedin /></a>
+                                        <a href="https://www.twitter.com/maxvij" target="_blank" rel="noreferrer"><LogoTwitter /></a>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-12 col-md-6">
