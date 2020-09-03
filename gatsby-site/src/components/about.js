@@ -28,9 +28,9 @@ const About = (props) => {
                                 design. My experience has transformed me into a confident, fully-fledged UX Designer,
                                 ready to take on new challenges.
                             </p>
-                            {/*<div className="btn-container center">*/}
-                            {/*    <a href="#" className="btn btn-center btn-primary btn-icon btn-animate-down"><IosCloudDownload />Download resumé</a>*/}
-                            {/*</div>*/}
+                            <div className="btn-container center">
+                                <a href="http://www.maxvanijsselmuiden.nl/downloads/Max-van-IJsselmuiden-CV.pdf" download="http://www.maxvanijsselmuiden.nl/downloads/Max-van-IJsselmuiden-CV.pdf" className="btn btn-center btn-primary btn-icon btn-animate-down"><IosCloudDownload />Download resumé</a>
+                            </div>
                         </div>
                     </div>
                     <div className="col-12 col-lg-6">
