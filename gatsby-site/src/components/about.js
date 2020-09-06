@@ -1,5 +1,5 @@
 import React from "react"
-import Max from "../images/max-bw.png";
+import Max from "../images/max-bw-square.png";
 import IosCloudDownload from "react-ionicons/lib/IosCloudDownload"
 
 const About = (props) => {
