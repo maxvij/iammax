@@ -28,9 +28,9 @@ const CaseSupporter = (props) => {
                                 mention the name of the company that this app was designed for, nor show any more
                                 details than the displayed video.
                             </p>
-                            <div className="btn-container">
-                                <Link to="/cases/supporter" className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>
-                            </div>
+                            {/*<div className="btn-container">*/}
+                            {/*    <Link to="/cases/supporter" className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                 </div>
