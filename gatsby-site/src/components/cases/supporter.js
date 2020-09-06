@@ -2,6 +2,8 @@ import React from "react"
 import LabelCompany from "../305";
 import Supporter from "../../videos/cases/sport/feed.mp4";
 import Tags from "../tags";
+import {Link} from "gatsby";
+import IosArrowForward from "react-ionicons/lib/IosArrowForward";
 
 const CaseSupporter = (props) => {
     return (
@@ -11,7 +13,7 @@ const CaseSupporter = (props) => {
                     <div className="cross-bar"></div>
                     <div className="row">
                         <div className="col-12 col-md-6">
-                            <div className="iphone-panel waterrower-video">
+                            <div className="iphone-panel">
                                 <video autoPlay="autoplay" loop={true} muted src={Supporter}
                                        playsInline={true}/>
                                 <div className="iphone-frame"></div>
@@ -26,10 +28,9 @@ const CaseSupporter = (props) => {
                                 mention the name of the company that this app was designed for, nor show any more
                                 details than the displayed video.
                             </p>
-                            <p className="paragraph">
-                                The application would feature live scores of amateur football clubs, with a optional
-                                live stream of the match.
-                            </p>
+                            <div className="btn-container">
+                                <Link to="/cases/supporter" className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
