@@ -1,6 +1,6 @@
 import React from "react"
 import LabelCompany from "../305";
-import CarDayTime from "../../videos/cases/car/day-time.mp4";
+import CarDayTime from "../../videos/cases/car/day-time-night-time-transition.mp4";
 import Tags from "../tags";
 
 const CaseCar = (props) => {
