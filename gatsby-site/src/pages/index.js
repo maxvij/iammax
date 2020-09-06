@@ -10,6 +10,7 @@ import CaseCar from "../components/cases/car";
 import Contact from "../components/contact";
 import Intro from "../components/intro";
 import About from "../components/about";
+import CaseSupporter from "../components/cases/supporter";
 
 class IndexPage extends React.Component {
     render() {
@@ -33,7 +34,7 @@ class IndexPage extends React.Component {
 
                     <CaseCar />
 
-                    {/*<CaseSupporter />*/}
+                    <CaseSupporter />
 
                     <CaseAutoSociaal />
 

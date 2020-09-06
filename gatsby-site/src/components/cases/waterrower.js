@@ -1,5 +1,5 @@
 import React from "react"
-import WaterRowerVideo from "../../videos/cases/waterrower/wr-connect-intro.mp4";
+import WaterRowerVideo from "../../videos/cases/waterrower/wr-connect-workout.mp4";
 import IosArrowForward from "react-ionicons/lib/IosArrowForward"
 import LabelCompany from "../305";
 import {Link} from "gatsby";

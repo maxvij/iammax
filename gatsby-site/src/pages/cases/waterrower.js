@@ -8,6 +8,7 @@ import Intro from "../../videos/cases/waterrower/wr-connect-intro.mp4";
 import Workout from "../../videos/cases/waterrower/wr-connect-workout.mp4";
 import Settings from "../../videos/cases/waterrower/settings.mp4";
 import Session from "../../images/cases/waterrower/session.png";
+import ShowOff from "../../images/cases/waterrower/wide-showoff.png"
 import Tags from "../../components/tags";
 import IosArrowBack from "react-ionicons/lib/IosArrowBack"
 
@@ -46,6 +47,15 @@ const CaseDetails = () => (
             </div>
         </div>
         <section className="case">
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-12 col-sm-10 offset-sm-1 col-lg-12 offset-lg-0">
+                        <div className="showoff-container">
+                            <img className="showoff" src={ShowOff} alt="Several screenshots of the WaterRower app."/>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -177,6 +187,8 @@ const CaseDetails = () => (
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="container">
                 <div className="row">
                     <div className="col-12">
                         <div className="case-details color-waterrower right">
