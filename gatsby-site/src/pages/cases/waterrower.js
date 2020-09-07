@@ -95,36 +95,76 @@ const CaseDetails = ({location}) => {
 
                 <div className="row">
                     <div className="col-12">
-                        <div className="programs-container">
-                            <h2>Used tools and programs</h2>
-                            <div className="programs">
-                                <div className="row">
-                                    <div className="col-6 col-sm-3">
-                                        <div className="program">
-                                            <span className="icon adobe-xd"></span>
-                                            Adobe XD<br/>
-                                            <span className="description">Wireframing</span>
+                        <div className="role-panel">
+                            <div className="row">
+                                <div className="col-12 col-md-6">
+                                    <h3>My role in this project</h3>
+                                    <p className="paragraph">In this project, I was the lead designer for the iOS and
+                                        Android apps for
+                                        WaterRower (phone and tablet). The goal of the project was to provide customers
+                                        of the WaterRower rowing machines with a mobile application that improves the
+                                        general user experience of the product. The application should be an extension
+                                        to the existing physical monitor, which handles all the data that comes from the
+                                        rowing machine.</p>
+                                    <p className="paragraph">I was given a style guide by WaterRower UK and started the
+                                        ideation process based
+                                        upon this document. After I had established the main wireframes of the
+                                        application, I created several prototypes of the 'knob' interaction, a common
+                                        interaction in this application. I tested each prototype with the team and
+                                        learned what the best option would be. </p>
+                                    <p className="paragraph">Following, I extended the prototype and started shaping the actual UI
+                                        elements. After the initial weeks I had designed a initial flow of the application,
+                                        which would eventually turn out to be a good basis for the application. Over
+                                        time, in collaboration with the team, new features were thought of - for which I
+                                        repeated the usual design processes.</p>
+                                </div>
+                                <div className="col-12 col-md-6">
+                                    <h3>Division of skills</h3>
+                                    <div className="skills">
+                                        <div className="row">
+                                            <div className="col-12">
+                                                <p className="title">Adobe XD</p>
+                                                <p className="description">Rapid prototyping, interface design</p>
+                                            </div>
+                                            <div className="col-12">
+                                                <div className="bar grade-5"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="col-6 col-sm-3">
-                                        <div className="program">
-                                            <div className="icon adobe-ae"></div>
-                                            After Effects<br/>
-                                            <span className="description">Animations</span>
+                                        <div className="row">
+                                            <div className="col-12">
+                                                <p className="title">Adobe After Effects</p>
+                                                <p className="description">Micro-interactions, animations</p>
+                                            </div>
+                                            <div className="col-12">
+                                                <div className="bar grade-2"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="col-6 col-sm-3">
-                                        <div className="program">
-                                            <div className="icon adobe-ps"></div>
-                                            Photoshop<br/>
-                                            <span className="description">Visuals</span>
+                                        <div className="row">
+                                            <div className="col-12">
+                                                <p className="title">Android development (front-end)</p>
+                                                <p className="description">Creating layouts and interactions</p>
+                                            </div>
+                                            <div className="col-12">
+                                                <div className="bar grade-1"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="col-6 col-sm-3">
-                                        <div className="program">
-                                            <div className="icon affinity"></div>
-                                            Affinity Designer<br/>
-                                            <span className="description">Artwork</span>
+                                        <div className="row">
+                                            <div className="col-12">
+                                                <p className="title">Usability Testing</p>
+                                                <p className="description">User tests, prototype testing</p>
+                                            </div>
+                                            <div className="col-12">
+                                                <div className="bar grade-1"></div>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-12">
+                                                <p className="title">Project Management</p>
+                                                <p className="description">Problem-solving, decision making</p>
+                                            </div>
+                                            <div className="col-12">
+                                                <div className="bar grade-1"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -132,6 +172,7 @@ const CaseDetails = ({location}) => {
                         </div>
                     </div>
                 </div>
+
                 <div className="row">
                     <div className="col-12">
                         <div className="case-details color-waterrower right">

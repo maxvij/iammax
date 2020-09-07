@@ -255,6 +255,22 @@ section.case
     width: calc(100% - 20px)
     height: auto
 
+.role-panel
+  background: $note-background
+  padding: 30px
+  border-radius: 20px
+  margin-bottom: 80px
+  h3, p
+    font-family: 'Open Sans', sans-serif
+  h3
+    font-weight: 700
+    margin: 0 0 20px 0
+  p
+    line-height: 26px
+    &.paragraph
+      margin: 0 0 10px 0
+      &:last-of-type
+        margin: 0 0 30px 0
 @include media ("<=extralarge")
   .case-details
     h2
@@ -273,6 +289,15 @@ section.case
         border-radius: 20px
 
 @include media ("<medium")
+  .showoff-container
+    padding: 0
+  .role-panel
+    p.paragraph
+      font-size: 14px
+      line-height: 20px
+    .skills
+      .title, .description
+        font-size: 14px
   .case-details
     h2
       margin-top: 10px
