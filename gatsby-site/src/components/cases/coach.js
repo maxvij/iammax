@@ -38,7 +38,7 @@ const CaseCoach = (props) => {
                                 sportive goals and recommend workouts based on their preferences.
                             </p>
                             <div className="btn-container">
-                                <Link to="/cases/coach" className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>
+                                <Link to="/cases/coach" state={{fromProjects: props.fromProjects}} className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>
                             </div>
                         </div>
                     </div>

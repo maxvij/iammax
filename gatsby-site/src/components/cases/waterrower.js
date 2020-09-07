@@ -41,7 +41,7 @@ const CaseWaterRower = (props) => {
                                 user experience.
                             </p>
                             <div className="btn-container">
-                                <Link to="/cases/waterrower" className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>
+                                <Link to="/cases/waterrower" state={{fromProjects: props.fromProjects}} className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>
                             </div>
                         </div>
                     </div>

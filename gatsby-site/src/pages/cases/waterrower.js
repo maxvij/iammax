@@ -12,15 +12,19 @@ import ShowOff from "../../images/cases/waterrower/wide-showoff.png"
 import Tags from "../../components/tags";
 import IosArrowBack from "react-ionicons/lib/IosArrowBack"
 
-const CaseDetails = () => (
-    <Layout>
+const CaseDetails = ({location}) => {
+    const {state = {}} = location
+    const {fromProjects} = state
+    return (<Layout>
         <SEO title="WaterRower Case"/>
         <div className="case-header waterrower">
             <div className="container">
                 <div className="row">
                     <div className="col-12 col-sm-10 offset-sm-1">
                         <div className="intro">
-                            <Link to="/" className="btn btn-primary btn-icon btn-animate-left"><IosArrowBack />Go back</Link>
+                            <Link to={fromProjects ? "/projects" : "/"}
+                                  className="btn btn-primary btn-icon btn-animate-left"><IosArrowBack/>{fromProjects ? "All projects" : "Go back"}
+                            </Link>
                             <h1>A refreshing home rowing experience.</h1>
                             <Tags tags={["App design", "Animation", "Prototyping", "Project management"]}/>
                             <p className="paragraph">
@@ -149,7 +153,8 @@ const CaseDetails = () => (
                                 </div>
                                 <div className="col-12 col-sm-6">
                                     <div className="iphone-panel waterrower-video">
-                                        <img src={Session} loading="lazy" alt="Session view of the WaterRower Connect app."/>
+                                        <img src={Session} loading="lazy"
+                                             alt="Session view of the WaterRower Connect app."/>
                                         <div className="iphone-frame"></div>
                                     </div>
                                 </div>
@@ -218,7 +223,7 @@ const CaseDetails = () => (
                 </div>
             </div>
         </section>
-    </Layout>
-)
+    </Layout>)
+}
 
 export default CaseDetails
