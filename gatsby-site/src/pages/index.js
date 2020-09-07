@@ -5,12 +5,11 @@ import SEO from "../components/seo"
 import CaseWaterRower from "../components/cases/waterrower";
 import CaseCoach from "../components/cases/coach";
 import CaseBike from "../components/cases/bike";
-import CaseAutoSociaal from "../components/cases/edlink";
-import CaseCar from "../components/cases/car";
 import Contact from "../components/contact";
 import Intro from "../components/intro";
 import About from "../components/about";
-import CaseSupporter from "../components/cases/supporter";
+import {Link} from "gatsby";
+import IosArrowForward from "react-ionicons/lib/IosArrowForward";
 
 class IndexPage extends React.Component {
     render() {
@@ -21,8 +20,8 @@ class IndexPage extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <h2>My work</h2>
-                            <p className="subtitle">Take a look at my featured projects</p>
+                            <h2>Featured projects</h2>
+                            <p className="subtitle">The projects that I am most proud of</p>
                         </div>
                     </div>
 
@@ -32,11 +31,15 @@ class IndexPage extends React.Component {
 
                     <CaseCoach />
 
-                    <CaseCar />
-
-                    <CaseSupporter />
-
-                    <CaseAutoSociaal />
+                    <div className="row">
+                        <div className="col-12">
+                            <h2>There is more!</h2>
+                            <p className="subtitle">Browse through all my projects</p>
+                            <div className="btn-container relative center">
+                                <Link to="/projects" className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward/>View all projects</Link>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </section>

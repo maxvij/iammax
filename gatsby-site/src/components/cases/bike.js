@@ -1,6 +1,6 @@
 import React from "react"
 import LabelCompany from "../305";
-import Bike from "../../images/cases/bike/bike.png";
+import Bike from "../../images/cases/bike/intro.png";
 import Tags from "../tags";
 import {Link} from "gatsby";
 import IosArrowForward from "react-ionicons/lib/IosArrowForward";
@@ -26,7 +26,7 @@ const CaseBike = (props) => {
                                 and focused on creating animation-based interactions throughout the application.
                             </p>
                             <div className="btn-container">
-                                <Link to="/cases/bike" className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>
+                                <Link to="/cases/bike" state={{fromProjects: props.fromProjects}} className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>
                             </div>
                         </div>
                         <div className="col-12 col-md-6 order-1 order-md-2">
