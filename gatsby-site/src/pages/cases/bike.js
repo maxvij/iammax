@@ -8,6 +8,7 @@ import Tags from "../../components/tags";
 import Intro from "../../images/cases/bike/intro.png"
 import Pacer from "../../images/cases/bike/pacer.png"
 import History from "../../images/cases/bike/history.png"
+import ShowOff from "../../images/cases/bike/wide-showoff.png"
 import IosArrowBack from "react-ionicons/lib/IosArrowBack"
 
 const CaseDetails = () => (
@@ -41,6 +42,15 @@ const CaseDetails = () => (
             </div>
         </div>
         <section className="case">
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-12 col-sm-10 offset-sm-1 col-lg-12 offset-lg-0">
+                        <div className="showoff-container">
+                            <img className="showoff" src={ShowOff} alt="Several screenshots of the Bike app."/>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
