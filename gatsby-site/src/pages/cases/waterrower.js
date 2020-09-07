@@ -14,7 +14,7 @@ import IosArrowBack from "react-ionicons/lib/IosArrowBack"
 
 const CaseDetails = ({location}) => {
     const {state = {}} = location
-    const {fromProjects} = state
+    const {fromProjects} = state != null ? state : false
     return (<Layout>
         <SEO title="WaterRower Case"/>
         <div className="case-header waterrower">
@@ -25,7 +25,7 @@ const CaseDetails = ({location}) => {
                             <Link to={fromProjects ? "/projects" : "/"}
                                   className="btn btn-primary btn-icon btn-animate-left"><IosArrowBack/>{fromProjects ? "All projects" : "Go back"}
                             </Link>
-                            <h1>A refreshing home rowing experience.</h1>
+                            <h1>A refreshing rowing experience.</h1>
                             <Tags tags={["App design", "Animation", "Prototyping", "Project management"]}/>
                             <p className="paragraph">
                                 The stylish rowing machines from <a href="https://www.waterrower.com/"
@@ -97,7 +97,7 @@ const CaseDetails = ({location}) => {
                     <div className="col-12">
                         <div className="role-panel">
                             <div className="row">
-                                <div className="col-12 col-md-6">
+                                <div className="col-12 col-lg-8">
                                     <h3>My role in this project</h3>
                                     <p className="paragraph">In this project, I was the lead designer for the iOS and
                                         Android apps for
@@ -118,7 +118,7 @@ const CaseDetails = ({location}) => {
                                         time, in collaboration with the team, new features were thought of - for which I
                                         repeated the usual design processes.</p>
                                 </div>
-                                <div className="col-12 col-md-6">
+                                <div className="col-12 col-lg-4">
                                     <h3>Division of skills</h3>
                                     <div className="skills">
                                         <div className="row">

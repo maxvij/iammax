@@ -12,7 +12,7 @@ import IosArrowBack from "react-ionicons/lib/IosArrowBack"
 
 const CaseDetails = ({location}) => {
     const {state = {}} = location
-    const {fromProjects} = state
+    const {fromProjects} = state != null ? state : false
     return (
         <Layout>
             <SEO title="Coach Case"/>

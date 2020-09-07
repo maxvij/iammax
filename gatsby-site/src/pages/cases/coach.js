@@ -13,7 +13,7 @@ import IosArrowBack from "react-ionicons/lib/IosArrowBack"
 
 const CaseDetails = ({location}) => {
     const {state = {}} = location
-    const {fromProjects} = state
+    const {fromProjects} = state != null ? state : false
     return (
         <Layout>
             <SEO title="Coach Case"/>
@@ -76,6 +76,89 @@ const CaseDetails = ({location}) => {
                             </div>
                         </div>
                     </div>
+
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="role-panel">
+                                <div className="row">
+                                    <div className="col-12 col-lg-8">
+                                        <h3>My role in this project</h3>
+                                        <p className="paragraph">For this project I was a designer, front-end developer
+                                            and web developer. The goal of this project was to provide a 'all-in-one'
+                                            web environment, suitable for customers of various NOHrD fitness devices.
+                                            All applications of the NOHrD devices would feature specific sets of
+                                            workouts, and in the 'My-NOHrD' environment, customers could register their
+                                            device and create their own workouts, or navigate through pre-created
+                                            workouts by NOHrD. </p>
+                                        <p className="paragraph">Initially, I designed the dashboard, library, coach,
+                                            devices, and settings environment. Sticking to the already existing NOHrD
+                                            style (I had previously designed items for NOHrD applications), was
+                                            essential to maintain consistency across the product line. After I was
+                                            satisfied with the interface flow and the design, and the NOHrD team was
+                                            satisfied as well - I started to develop the system. A team member of
+                                            Label305 had already pre-build certain parts of the system, as for me, I did
+                                            not have much experience in working with the <a href="https://laravel.com/" target="_blank" rel="noreferrer" title="Laravel - The PHP Framework for Web Artisans">Laravel framework</a>.</p>
+                                        <p className="paragraph">The development of (parts of) the back-end went quite
+                                            smoothly, although I was more 'comfortable' with the development of the
+                                            front-end of the application. The dashboard is developed using the <a href="https://reactjs.org/" target="_blank" rel="noreferrer" title="React - A JavaScript library for building user interfaces">React
+                                                framework</a>, to allow for responsive filtering of the fast available
+                                            content. </p>
+                                    </div>
+                                    <div className="col-12 col-lg-4">
+                                        <h3>Division of skills</h3>
+                                        <div className="skills">
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <p className="title">Sketch</p>
+                                                    <p className="description">Interface design</p>
+                                                </div>
+                                                <div className="col-12">
+                                                    <div className="bar grade-3"></div>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <p className="title">Front-end development</p>
+                                                    <p className="description">HTML, CSS, SASS</p>
+                                                </div>
+                                                <div className="col-12">
+                                                    <div className="bar grade-3"></div>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <p className="title">Web development</p>
+                                                    <p className="description">PHP, Laravel</p>
+                                                </div>
+                                                <div className="col-12">
+                                                    <div className="bar grade-2"></div>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <p className="title">React</p>
+                                                    <p className="description">TypeScript</p>
+                                                </div>
+                                                <div className="col-12">
+                                                    <div className="bar grade-1"></div>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <p className="title">Project Management</p>
+                                                    <p className="description">Problem-solving, decision making</p>
+                                                </div>
+                                                <div className="col-12">
+                                                    <div className="bar grade-1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="row">
                         <div className="col-12">
                             <div className="case-details full-width">
