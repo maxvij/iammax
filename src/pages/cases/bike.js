@@ -17,7 +17,7 @@ const CaseDetails = ({location}) => {
     return (
         <Layout>
             <SEO title="Bike Case"/>
-            <div className="case-header color-bike">
+            <div className="case-header large color-bike">
                 <div className="container">
                     <div className="row">
                         <div className="col-12 offset-0 col-sm-12 offset-sm-0 col-md-10 offset-md-1">
