@@ -1,0 +1,50 @@
+@import "fonts"
+@import "reset"
+@import "~include-media/dist/include-media"
+@import "variables"
+
+@import "sections/header"
+@import "sections/intro"
+@import "sections/work"
+@import "sections/case"
+@import "sections/about"
+@import "sections/contact"
+@import "sections/footer"
+
+@import "switch"
+@import "button"
+@import "link"
+@import "tags"
+@import "form"
+
+h1
+  font-family: 'Vollkorn', serif
+  font-weight: 700
+  font-size: 36px
+  margin: 10px 0
+html, body
+  overflow-x: hidden
+
+body
+  font-family: 'Vollkorn', serif
+  background: $white
+  &.dark-mode
+    background: $dm-white
+
+  h2
+    font-family: 'Vollkorn', serif
+    font-weight: 700
+    text-align: center
+    margin: 60px 0 10px 0
+    font-size: 36px
+  p.subtitle
+    text-align: center
+    font-family: 'Open Sans', sans-serif
+    color: $gray
+    font-size: 20px
+  .margin
+    margin: 50px 0
+
+// Box shadow
+.panel, .case-panel, .role-panel
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.1)
