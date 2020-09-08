@@ -157,12 +157,12 @@ const CaseDetails = ({location}) => {
                                         for the application.
                                         These are the key features introduced in the onboarding to provide a fluent
                                         experience:
-                                        <ul>
-                                            <li>Auto-detection of closeby devices</li>
-                                            <li>Allow for skipping of steps</li>
-                                            <li>Log in via your Password manager</li>
-                                        </ul>
                                     </p>
+                                    <ul>
+                                        <li>Auto-detection of closeby devices</li>
+                                        <li>Allow for skipping of steps</li>
+                                        <li>Log in via your Password manager</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
