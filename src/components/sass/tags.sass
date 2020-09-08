@@ -1,0 +1,33 @@
+ul.tags
+  width: 100%
+  display: inline-block
+  float: left
+  margin: 0 0 20px 0
+  li
+    margin: 0 5px 5px 0
+    line-height: 24px
+    padding: 3px 10px
+    height: 30px
+    font-size: 14px
+    text-transform: uppercase
+    color: $primary-color-dark
+    font-family: 'Open Sans', sans-serif
+    font-weight: 600
+    float: left
+    border-radius: 8px
+    background: $primary-color-opaque
+
+body
+  &.dark-mode
+    ul.tags
+      li
+        background: $dm-primary-color-opaque
+        color: $dm-primary-color-dark
+
+@include media("<=medium")
+  ul.tags
+    margin: 0 0 10px 0
+    li
+      line-height: 20px
+      padding: 3px 10px
+      height: 26px
