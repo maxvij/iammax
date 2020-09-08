@@ -19,7 +19,7 @@ const CaseDetails = ({location}) => {
     const {fromProjects} = state != null ? state : false
     return (<Layout>
         <SEO title="WaterRower Case"/>
-        <div className="case-header waterrower">
+        <div className="case-header large waterrower">
             <div className="container">
                 <div className="row">
                     <div className="col-12 col-sm-10 offset-sm-1">
@@ -217,7 +217,7 @@ const CaseDetails = ({location}) => {
                 <div className="row">
                     <div className="col-12 col-sm-10 offset-sm-1 col-lg-12 offset-lg-0">
                         <div className="showoff-container">
-                            <img className="showoff" src={WR1}
+                            <img className="showoff" src={WR2}
                                  alt="WaterRower photo from WaterRowerBenelux on Flickr."/>
                         </div>
                     </div>
@@ -279,17 +279,6 @@ const CaseDetails = ({location}) => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-12 col-sm-10 offset-sm-1 col-lg-12 offset-lg-0">
-                        <div className="showoff-container">
-                            <img className="showoff" src={WR2}
-                                 alt="WaterRower photo from WaterRowerBenelux on Flickr."/>
                         </div>
                     </div>
                 </div>
