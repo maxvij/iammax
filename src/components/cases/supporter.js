@@ -2,8 +2,6 @@ import React from "react"
 import LabelCompany from "../305";
 import Supporter from "../../videos/cases/sport/feed.mp4";
 import Tags from "../tags";
-import {Link} from "gatsby";
-import IosArrowForward from "react-ionicons/lib/IosArrowForward";
 
 const CaseSupporter = (props) => {
     return (
@@ -28,9 +26,6 @@ const CaseSupporter = (props) => {
                                 mention the name of the company that this app was designed for, nor show any more
                                 details than the displayed video.
                             </p>
-                            {/*<div className="btn-container">*/}
-                            {/*    <Link to="/cases/supporter" className="btn btn-primary btn-icon btn-icon-right btn-animate-right"><IosArrowForward />View case</Link>*/}
-                            {/*</div>*/}
                         </div>
                     </div>
                 </div>

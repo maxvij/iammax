@@ -49,7 +49,7 @@ const Layout = ({children}) => {
         <div className="container center">
           <div className="row">
             <div className="col-12">
-              <a className="btn btn-move-top btn-icon btn-animate-up" onClick={scrollUp}><IosArrowUp />Back to top</a>
+              <button className="btn btn-move-top btn-icon btn-animate-up" onClick={scrollUp}><IosArrowUp />Back to top</button>
             </div>
           </div>
         </div>

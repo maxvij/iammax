@@ -9,7 +9,6 @@ import Workout from "../../videos/cases/waterrower/wr-connect-workout.mp4";
 import Settings from "../../videos/cases/waterrower/settings.mp4";
 import Session from "../../images/cases/waterrower/session.png";
 import ShowOff from "../../images/cases/waterrower/wide-showoff.png"
-import WR1 from "../../images/cases/waterrower/wr-1.jpg"
 import WR2 from "../../images/cases/waterrower/wr-2.jpg"
 import Tags from "../../components/tags";
 import IosArrowBack from "react-ionicons/lib/IosArrowBack"
@@ -218,7 +217,7 @@ const CaseDetails = ({location}) => {
                     <div className="col-12 col-sm-10 offset-sm-1 col-lg-12 offset-lg-0">
                         <div className="showoff-container">
                             <img className="showoff" src={WR2}
-                                 alt="WaterRower photo from WaterRowerBenelux on Flickr."/>
+                                 alt="The WaterRower machine."/>
                         </div>
                     </div>
                 </div>
