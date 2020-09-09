@@ -10,6 +10,8 @@ import Pacer from "../../images/cases/bike/pacer.png"
 import History from "../../images/cases/bike/history.png"
 import ShowOff from "../../images/cases/bike/wide-showoff.png"
 import IosArrowBack from "react-ionicons/lib/IosArrowBack"
+import Bike2 from "../../images/cases/bike/bike-2.jpg";
+import Bike3 from "../../images/cases/bike/bike-3.jpg";
 
 const CaseDetails = ({location}) => {
     const {state = {}} = location
@@ -17,7 +19,7 @@ const CaseDetails = ({location}) => {
     return (
         <Layout>
             <SEO title="Bike Case"/>
-            <div className="case-header color-bike">
+            <div className="case-header large color-bike">
                 <div className="container">
                     <div className="row">
                         <div className="col-12 offset-0 col-sm-12 offset-sm-0 col-md-10 offset-md-1">
@@ -76,11 +78,30 @@ const CaseDetails = ({location}) => {
                                             has
                                             set for their products.
                                         </p>
+                                        <ul>
+                                            <li>App-specific color scheme</li>
+                                            <li>Large-scale Lottie animations</li>
+                                            <li>Minimalistic look</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-12 col-sm-10 offset-sm-1 col-lg-12 offset-lg-0">
+                            <div className="showoff-container">
+                                <img className="showoff" src={Bike2}
+                                     alt="Bike photo from NOHrD."/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="container">
                     <div className="row">
                         <div className="col-12">
                             <div className="case-details color-bike right">
@@ -134,46 +155,19 @@ const CaseDetails = ({location}) => {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className="container-fluid">
                     <div className="row">
-                        <div className="col-12">
-                            <div className="programs-container">
-                                <h2>Used tools and programs</h2>
-                                <div className="programs">
-                                    <div className="row">
-                                        <div className="col-6 col-sm-3">
-                                            <div className="program">
-                                                <span className="icon adobe-xd"></span>
-                                                Adobe XD<br/>
-                                                <span className="description">Wireframing</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-6 col-sm-3">
-                                            <div className="program">
-                                                <div className="icon adobe-ae"></div>
-                                                After Effects<br/>
-                                                <span className="description">Animations</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-6 col-sm-3">
-                                            <div className="program">
-                                                <div className="icon adobe-ps"></div>
-                                                Photoshop<br/>
-                                                <span className="description">Visuals</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-6 col-sm-3">
-                                            <div className="program">
-                                                <div className="icon affinity"></div>
-                                                Affinity Designer<br/>
-                                                <span className="description">Artwork</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div className="col-12 col-sm-10 offset-sm-1 col-lg-12 offset-lg-0">
+                            <div className="showoff-container">
+                                <img className="showoff" src={Bike3}
+                                     alt="Bike photo from NOHrD."/>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
         </Layout>
     )
