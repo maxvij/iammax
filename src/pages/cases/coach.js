@@ -10,6 +10,7 @@ import Step1 from "../../images/cases/coach/step1.png"
 import Step2 from "../../images/cases/coach/step2.png"
 import Step3 from "../../images/cases/coach/step3.png"
 import IosArrowBack from "react-ionicons/lib/IosArrowBack"
+import Coach1 from "../../images/cases/coach/coach-1.jpg";
 
 const CaseDetails = ({location}) => {
     const {state = {}} = location
@@ -17,7 +18,7 @@ const CaseDetails = ({location}) => {
     return (
         <Layout>
             <SEO title="Coach Case"/>
-            <div className="case-header color-coach">
+            <div className="case-header color-coach large">
                 <div className="container">
                     <div className="row">
                         <div className="col-12 offset-0 col-sm-12 offset-sm-0 col-md-10 offset-md-1">
@@ -48,35 +49,6 @@ const CaseDetails = ({location}) => {
             </div>
             <section className="case">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="case-details color-coach full-width">
-                                <div className="row">
-                                    <div className="col-12">
-                                        <h2>Designing for an ecosystem.</h2>
-                                        <p className="paragraph">
-                                            With all NOHrD products having an individual app, it makes sense to have
-                                            consistency throughout these apps. In the Coach project, reusable interface
-                                            elements have been designed; these elements are used in the various NOHrD
-                                            apps,
-                                            such as We-Row and <Link to="/cases/bike/">Bike</Link>.
-                                        </p>
-                                        <p className="paragraph">
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="row wide-bar color-coach">
-                                    <div className="col-12 col-sm-10 offset-sm-1">
-                                        <div className="ipad-panel no-radius">
-                                            <img src={Coach} loading="lazy"
-                                                 alt="Screenshot of the library view of the Coach system."/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div className="row">
                         <div className="col-12">
                             <div className="role-panel">
@@ -161,6 +133,48 @@ const CaseDetails = ({location}) => {
 
                     <div className="row">
                         <div className="col-12">
+                            <div className="case-details color-coach full-width">
+                                <div className="row">
+                                    <div className="col-12">
+                                        <h2>Designing for an ecosystem.</h2>
+                                        <p className="paragraph">
+                                            With all NOHrD products having an individual app, it makes sense to have
+                                            consistency throughout these apps. In the Coach project, reusable interface
+                                            elements have been designed; these elements are used in the various NOHrD
+                                            apps,
+                                            such as We-Row and <Link to="/cases/bike/">Bike</Link>.
+                                        </p>
+                                        <p className="paragraph">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="row wide-bar color-coach">
+                                    <div className="col-12 col-sm-10 offset-sm-1">
+                                        <div className="ipad-panel no-radius">
+                                            <img src={Coach} loading="lazy"
+                                                 alt="Screenshot of the library view of the Coach system."/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-12 col-sm-10 offset-sm-1 col-lg-12 offset-lg-0">
+                            <div className="showoff-container">
+                                <img className="showoff" src={Coach1}
+                                     alt="A collection of several fitness products by NOHrD."/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
                             <div className="case-details full-width">
                                 <h2>Request feedback from a professional.</h2>
                                 <p className="paragraph">
@@ -184,46 +198,6 @@ const CaseDetails = ({location}) => {
                                         </div>
                                         <div className="col-12 col-md-4">
                                             <img src={Step3} alt="Step 3"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="programs-container">
-                                <h2>Used tools and programs</h2>
-                                <div className="programs">
-                                    <div className="row">
-                                        <div className="col-6 col-sm-3">
-                                            <div className="program">
-                                                <span className="icon adobe-xd"></span>
-                                                Adobe XD<br/>
-                                                <span className="description">Wireframing</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-6 col-sm-3">
-                                            <div className="program">
-                                                <div className="icon adobe-ae"></div>
-                                                After Effects<br/>
-                                                <span className="description">Animations</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-6 col-sm-3">
-                                            <div className="program">
-                                                <div className="icon adobe-ps"></div>
-                                                Photoshop<br/>
-                                                <span className="description">Visuals</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-6 col-sm-3">
-                                            <div className="program">
-                                                <div className="icon affinity"></div>
-                                                Affinity Designer<br/>
-                                                <span className="description">Artwork</span>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
