@@ -29,8 +29,8 @@ const Contact = (props) => {
                                     <p>Groningen, Netherlands</p>
                                     <div className="contact-container">
                                         <a href="https://www.linkedin.com/in/maxvanijsselmuiden/"
-                                               target="_blank" rel="noreferrer"><LogoLinkedin /></a>
-                                        <a href="https://www.twitter.com/maxvij" target="_blank" rel="noreferrer"><LogoTwitter /></a>
+                                               target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn profile"><LogoLinkedin /></a>
+                                        <a href="https://www.twitter.com/maxvij" aria-label="Twitter" title="Twitter profile" target="_blank" rel="noreferrer"><LogoTwitter /></a>
                                     </div>
                                 </div>
                             </div>

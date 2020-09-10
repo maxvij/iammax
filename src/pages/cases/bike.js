@@ -95,7 +95,7 @@ const CaseDetails = ({location}) => {
                         <div className="col-12 col-sm-10 offset-sm-1 col-lg-12 offset-lg-0">
                             <div className="showoff-container">
                                 <img className="showoff" src={Bike2}
-                                     alt="Bike photo from NOHrD."/>
+                                     alt="The NOHrD Bike from NOHrD."/>
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@ const CaseDetails = ({location}) => {
                         <div className="col-12 col-sm-10 offset-sm-1 col-lg-12 offset-lg-0">
                             <div className="showoff-container">
                                 <img className="showoff" src={Bike3}
-                                     alt="Bike photo from NOHrD."/>
+                                     alt="The NOHrD Bike from NOHrD."/>
                             </div>
                         </div>
                     </div>

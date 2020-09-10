@@ -29,7 +29,7 @@ const About = (props) => {
                                 ready to take on new challenges.
                             </p>
                             <div className="btn-container center">
-                                <a href="http://www.maxvanijsselmuiden.nl/downloads/Max-van-IJsselmuiden-CV.pdf" download="http://www.maxvanijsselmuiden.nl/downloads/Max-van-IJsselmuiden-CV.pdf" className="btn btn-center btn-primary btn-icon btn-animate-down"><IosCloudDownload />Download resumé</a>
+                                <a href="https://www.maxvanijsselmuiden.nl/downloads/Max-van-IJsselmuiden-CV.pdf" download="http://www.maxvanijsselmuiden.nl/downloads/Max-van-IJsselmuiden-CV.pdf" className="btn btn-center btn-primary btn-icon btn-animate-down"><IosCloudDownload />Download resumé</a>
                             </div>
                         </div>
                     </div>

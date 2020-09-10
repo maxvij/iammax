@@ -26,7 +26,7 @@ export default class DarkModeToggle extends React.Component {
         // If the `onClick` prop exists, call it with 'light'
         const
             handleClick = () => this.props.darkMode.value ? (this.props.onClick && this.props.onClick('light')) : (this.props.onClick && this.props.onClick('dark'));
-        return <div className="switch-wrapper" onClick={handleClick}>
+        return <div className="switch-wrapper" onClick={handleClick} onKeyPress={handleClick} role="button" tabIndex={0}>
             <Lottie options={defaultOptions}
                     height={32}
                     width={64}
