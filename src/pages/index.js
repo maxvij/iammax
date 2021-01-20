@@ -10,6 +10,7 @@ import Intro from "../components/intro";
 import About from "../components/about";
 import {Link} from "gatsby";
 import IosArrowForward from "react-ionicons/lib/IosArrowForward";
+import BlogPage from "./blog";
 
 class IndexPage extends React.Component {
     render() {
@@ -17,6 +18,15 @@ class IndexPage extends React.Component {
             <SEO title="Home"/>
             <Intro />
             <section className="work">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <h2>Latest blog articles</h2>
+                            <p className="subtitle">Sometimes I like to write</p>
+                        </div>
+                    </div>
+                    <BlogPage />
+                </div>
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
