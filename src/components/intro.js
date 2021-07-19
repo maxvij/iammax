@@ -1,5 +1,5 @@
 import React from "react"
-import Max from "../images/max-bw.png";
+import Max from "../images/max-vector.svg";
 import Lottie from "react-lottie";
 
 export default class Intro extends React.Component {
