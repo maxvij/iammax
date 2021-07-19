@@ -17,16 +17,8 @@ class IndexPage extends React.Component {
         return <Layout>
             <SEO title="Home"/>
             <Intro />
+            <BlogPage />
             <section className="work">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <h2>Latest blog articles</h2>
-                            <p className="subtitle">Sometimes I like to write</p>
-                        </div>
-                    </div>
-                    <BlogPage />
-                </div>
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
