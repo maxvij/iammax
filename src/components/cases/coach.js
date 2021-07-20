@@ -1,6 +1,6 @@
 import React from "react"
 import LabelCompany from "../305";
-import Coach from "../../images/cases/coach/coach.png";
+import Coach from "../../images/cases/coach/coach.jpg";
 import Tags from "../tags";
 import {Link} from "gatsby";
 import IosArrowForward from "react-ionicons/lib/IosArrowForward";
