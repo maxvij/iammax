@@ -1,5 +1,5 @@
 import React from "react"
-import Max from "../images/max-bw-square.png";
+import Max from "../images/max-bw-square.webp";
 import LogoLinkedin from "react-ionicons/lib/LogoLinkedin"
 
 const Contact = (props) => {

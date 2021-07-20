@@ -5,10 +5,10 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import LabelCompany from "../../components/305";
 import Tags from "../../components/tags";
-import Coach from "../../images/cases/coach/coach.png"
-import Step1 from "../../images/cases/coach/step1.png"
-import Step2 from "../../images/cases/coach/step2.png"
-import Step3 from "../../images/cases/coach/step3.png"
+import Coach from "../../images/cases/coach/coach.jpg"
+import Step1 from "../../images/cases/coach/step1.jpg"
+import Step2 from "../../images/cases/coach/step2.jpg"
+import Step3 from "../../images/cases/coach/step3.jpg"
 import IosArrowBack from "react-ionicons/lib/IosArrowBack"
 import Coach1 from "../../images/cases/coach/coach-1.jpg";
 
