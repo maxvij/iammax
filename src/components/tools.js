@@ -22,9 +22,9 @@ const Tools = props => {
           </div>
         </div>
         <div className="row">
-          <div className="col-12 col-lg-8 offset-lg-2">
+          <div className="col-12 col-lg-8 offset-lg-2 tools-background">
             <div className="row">
-              <div className="col-12 col-sm-6 col-md-4">
+              <div className="col-4 col-sm-6 col-md-4">
                 <div
                   className="panel"
                   role="button"
@@ -39,7 +39,7 @@ const Tools = props => {
                   <p>design</p>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4">
+              <div className="col-4 col-sm-6 col-md-4">
                 <div
                   className="panel"
                   role="button"
@@ -54,7 +54,7 @@ const Tools = props => {
                   <p>screen recording</p>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4">
+              <div className="col-4 col-sm-6 col-md-4">
                 <div
                   className="panel"
                   role="button"
@@ -69,7 +69,7 @@ const Tools = props => {
                   <p>organizing</p>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4">
+              <div className="col-4 col-sm-6 col-md-4">
                 <div
                   className="panel"
                   role="button"
@@ -84,7 +84,7 @@ const Tools = props => {
                   <p>code</p>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4">
+              <div className="col-4 col-sm-6 col-md-4">
                 <div
                   className="panel"
                   role="button"
@@ -99,7 +99,7 @@ const Tools = props => {
                   <p>accessibility</p>
                 </div>
               </div>
-              <div className="col-12 col-sm-6 col-md-4">
+              <div className="col-4 col-sm-6 col-md-4">
                 <div
                   className="panel"
                   role="button"

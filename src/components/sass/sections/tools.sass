@@ -3,10 +3,13 @@ body
     section.tools
       background: $dm-secondary-color-opaque
       transition: background .3s ease-in-out
+      .tools-background
+        &::before
+          background: $black-light
       h2
         color: $dm-black
       .panel
-        background: $dm-white
+        background: $dm-white-light
         color: $dm-black
       .icon
         background: $dm-gray-dark
@@ -19,6 +22,16 @@ section.tools
   padding-top: 60px
   box-sizing: border-box
   min-height: 900px
+  .tools-background
+    &:before
+      content: ""
+      width: calc(100% - 60px)
+      height: calc(100% - 90px)
+      position: absolute
+      top: 30px
+      left: 30px
+      background: $gray-light
+      border-radius: 20px
   h2
     color: $black
   .margin
@@ -89,3 +102,24 @@ section.tools
     .panel
       margin: 0 0 20px 0
       padding: 20px
+
+@include media ("<=small")
+  section.tools
+    min-height: 300px
+    .subtitle
+      margin-bottom: 30px
+    .panel
+      padding: 0
+      width: 80px
+      height: 80px
+      margin: 0 auto 30px auto
+      display: flex
+      flex-flow: row
+      align-items: center
+      justify-content: center
+      .icon
+        margin: 0
+      h3
+        display: none
+      p
+        display: none
