@@ -29,8 +29,8 @@ export default class Intro extends React.Component {
             <div className="col-10 offset-1 col-sm-6 offset-sm-0 col-lg-5">
               <h1>Hi, I'm Max,</h1>
               <p className="subtitle">
-                a creative <span>Product Designer</span>, specialized in{" "}
-                <span>Design Systems</span> and <span>micro animations</span>.{" "}
+                a creative <span>Product Designer</span>, with a love for{" "}
+                <span>micro-interactions</span> and <span>design systems</span>.{" "}
                 <br />
               </p>
               <div className="animation-wrapper">
