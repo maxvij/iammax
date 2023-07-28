@@ -5,16 +5,16 @@ ul.tags
   margin: 0 0 20px 0
   li
     margin: 0 5px 5px 0
-    line-height: 24px
-    padding: 3px 10px
-    height: 30px
+    line-height: 20px
+    padding: 4px 8px
+    height: 28px
     font-size: 14px
     text-transform: uppercase
-    color: $primary-color-dark
+    color: $primary-color-text
     font-family: 'Figtree', sans-serif
     font-weight: 600
     float: left
-    border-radius: 8px
+    border-radius: 4px
     background: $primary-color-opaque
 
 body
@@ -24,10 +24,11 @@ body
         background: $dm-primary-color-opaque
         color: $dm-primary-color-dark
 
-@include media("<=medium")
+@include media("<=large")
   ul.tags
     margin: 0 0 10px 0
     li
-      line-height: 20px
-      padding: 3px 10px
-      height: 26px
+      font-size: 12px
+      line-height: 14px
+      padding: 4px 8px
+      height: 24px
