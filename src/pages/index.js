@@ -16,7 +16,7 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Home" />
+        <SEO title="Product Designer" />
         <Intro />
         <section className="work">
           <div className="container">
