@@ -2,20 +2,18 @@ a, a:link, a:active, a:visited
   font-size: inherit
   position: relative
   color: $primary-color-dark
-  transition: all .3s ease-in-out
+  transition: none
   &:after
     content: ""
     position: absolute
     left: 0
     right: 0
     top: 90%
-    transition: all .3s ease-in-out
     border-bottom: 2px solid transparent
   &:hover, &:focus
     color: $primary-color-dark
     text-decoration: none
-    transition: all .2s ease-in-out
+    transition: none
     &:after
-      transition: all .2s ease-in-out
       border-bottom: 2px solid $primary-color
 

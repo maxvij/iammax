@@ -1,0 +1,125 @@
+body
+  &.dark-mode
+    section.tools
+      background: $dm-secondary-color-opaque
+      transition: background .3s ease-in-out
+      .tools-background
+        &::before
+          background: $black-light
+      h2
+        color: $dm-black
+      .panel
+        background: $dm-white-light
+        color: $dm-black
+      .icon
+        background: $dm-gray-dark
+        img
+          filter: drop-shadow(0px 1px 10px $dm-secondary-color-opaque)
+
+section.tools
+  background: $secondary-color-opaque
+  transition: all .3s ease-in-out
+  padding-top: 60px
+  box-sizing: border-box
+  min-height: 600px
+  .tools-background
+    margin-top: 30px
+    margin-bottom: 30px
+    &:before
+      content: ""
+      width: calc(100% - 60px)
+      height: calc(100% - 90px)
+      position: absolute
+      top: 30px
+      left: 30px
+      background: $gray-light
+      border-radius: 20px
+  h2
+    color: $black
+  .margin
+    margin: 60px 0
+  .panel
+    margin-bottom: 30px
+    background: $white
+    padding: 30px
+    border-radius: 20px
+    text-align: center
+    display: flex
+    flex-flow: column
+    align-items: center
+    justify-content: center
+    border-radius: 10px
+    &:hover
+      transform: translateY(-5px)
+      box-shadow: 0 15px 20px rgba(0,0,0,0.2), 0 2px 4px rgba(0,0,0,0.2)
+    &:focus
+      transform: translateY(+2px)
+    h3
+      font-weight: 700
+      font-family: 'Vollkorn', serif
+      font-size: 22px
+      margin: 5px 0
+    p
+      font-family: 'Figtree', sans-serif
+      color: $gray
+      margin: 10px 0
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-flow: row
+  .icon
+    height: 80px
+    width: 80px
+    background: $gray-dark
+    display: flex
+    flex-flow: row
+    align-items: center
+    justify-content: center
+    border-radius: 10px
+    margin-bottom: 20px
+    img
+      width: 48px
+      max-height: 48px
+      height: auto
+      display: flex
+      flex-flow: row
+      align-items: center
+      justify-content: center
+      filter: drop-shadow(0px 1px 10px $secondary-color-opaque)
+
+
+@include media ("<=medium")
+  section.tools
+    padding-top: 20px
+    .margin
+      margin: 20px
+    h2
+      margin: 20px 0 10px 0
+    .panel
+      margin: 0 0 20px 0
+      padding: 20px
+
+@include media ("<=extralarge")
+  section.tools
+    .panel
+      margin: 0 0 20px 0
+      padding: 20px
+
+@include media ("<=small")
+  section.tools
+    min-height: 300px
+    .panel
+      padding: 0
+      width: 80px
+      height: 80px
+      margin: 0 auto 30px auto
+      display: flex
+      flex-flow: row
+      align-items: center
+      justify-content: center
+      .icon
+        margin: 0
+      h3
+        display: none
+      p
+        display: none
