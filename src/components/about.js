@@ -22,7 +22,7 @@ const About = props => {
               </div>
               <h3>Max van IJsselmuiden</h3>
               <p className="subtitle">Product Designer</p>
-              <p className="paragraph center">
+              <p className="paragraph">
                 I am an enthusiastic, creative and to-the-point designer. Design
                 has always been my passion and throughout the years this passion
                 has converged into digital interface design. My experience has
