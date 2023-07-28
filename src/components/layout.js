@@ -7,8 +7,8 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import {useStaticQuery, graphql} from "gatsby"
-import useDarkMode from "use-dark-mode";
+import { useStaticQuery, graphql } from "gatsby"
+import useDarkMode from "use-dark-mode"
 import Header from "./header"
 import IosArrowUp from "react-ionicons/lib/IosArrowUp"
 
@@ -17,7 +17,7 @@ import "./sass/layout.css"
 import "./sass/bootstrap.scss"
 import "./sass/style.sass"
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,10 +26,10 @@ const Layout = ({children}) => {
         }
       }
     }
-  `);
+  `)
 
   function scrollUp() {
-    var doc = document.documentElement;
+    var doc = document.documentElement
     var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0)
     if (top > 0) {
       window.scrollTo(0, top - 15)
@@ -37,19 +37,30 @@ const Layout = ({children}) => {
     }
   }
 
-  const darkMode = useDarkMode(false);
+  const darkMode = useDarkMode(false)
 
-  const handleTheme = theme => theme === "dark" ? darkMode.enable() : darkMode.disable();
+  const handleTheme = theme =>
+    theme === "dark" ? darkMode.enable() : darkMode.disable()
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} darkMode={darkMode} handleTheme={handleTheme}/>
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        darkMode={darkMode}
+        handleTheme={handleTheme}
+      />
       <main>
         {children}
         <div className="container center">
           <div className="row">
             <div className="col-12">
-              <button className="btn btn-move-top btn-icon btn-animate-up" onClick={scrollUp}><IosArrowUp />Back to top</button>
+              <button
+                className="btn btn-move-top btn-icon btn-animate-up"
+                onClick={scrollUp}
+              >
+                <IosArrowUp />
+                Back to top
+              </button>
             </div>
           </div>
         </div>
@@ -59,7 +70,9 @@ const Layout = ({children}) => {
           <div className="row">
             <div className="col-12">
               <p>
-                © {new Date().getFullYear()} Max van IJsselmuiden, indicated projects copyrighted by  <a href="https://www.305.nl/en/">Label305</a>. Built with
+                © {new Date().getFullYear()} Max van IJsselmuiden, indicated
+                projects copyrighted by{" "}
+                <a href="https://www.305.nl/en/">Label305</a>. Built with
                 {` `}
                 <a href="https://www.gatsbyjs.org">Gatsby</a> and{` `}
                 <a href="https://airbnb.design/lottie/">Lottie</a>.

@@ -11,20 +11,20 @@
   transform: translateY(0)
   border-radius: 20px
   z-index: 999
-  box-shadow: 0 2px 10px $primary-color-opaque-dark
-  transition: all .2s ease-in-out !important
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1)
+  transition: none !important
   &:focus, &:active
     color: $black !important
     background: $primary-color !important
     transform: translateY(2px) !important
-    box-shadow: 0 2px 10px $primary-color-opaque-dark !important
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important
+    transition: none !important
     svg
       fill: $black !important
   &:hover, &:target
     background: $primary-color !important
     color: $black !important
-    transition: all .2s ease-in-out !important
-    box-shadow: 0 2px 10px $primary-color-opaque-dark !important
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important
     &.btn-icon
       &.btn-animate-left, &.btn-animate-right, &.btn-animate-up, &.btn-animate-down
         svg
@@ -38,20 +38,16 @@
           svg
             animation-name: highlightArrowRight
             right: 10px
-            transition: all .2s ease-in-out
       &.btn-animate-left
         svg
           animation-name: highlightArrowLeft
           left: 10px
-          transition: all .2s ease-in-out
       &.btn-animate-up
         svg
           animation-name: highlightArrowUp
-          transition: all .2s ease-in-out
       &.btn-animate-down
         svg
           animation-name: highlightArrowDown
-          transition: all .2s ease-in-out
   &:focus, &:hover
     box-shadow: none
     &:after
@@ -76,7 +72,6 @@
       left: 10px
       height: 20px
       fill: $white
-      transition: all .3s ease-in-out
 .btn-container
   position: absolute
   bottom: -15px
