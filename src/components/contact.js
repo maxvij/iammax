@@ -2,6 +2,7 @@ import React from "react"
 import Max from "../images/max-bw-square.webp"
 import NL from "../images/nl.svg"
 import LogoLinkedin from "react-ionicons/lib/LogoLinkedin"
+import LogoTwitter from "react-ionicons/lib/LogoTwitter"
 
 const Contact = props => {
   return (
@@ -32,7 +33,7 @@ const Contact = props => {
                   <img src={Max} alt="Me." className="avatar" loading="lazy" />
                   <h3>Max van IJsselmuiden</h3>
                   <p>
-                    <img src={NL} className="flag" />
+                    <img src={NL} className="flag" alt="Dutch flag" />
                     The Netherlands
                   </p>
                   <div className="contact-container">
@@ -44,6 +45,15 @@ const Contact = props => {
                       title="LinkedIn profile"
                     >
                       <LogoLinkedin />
+                    </a>
+                    <a
+                      href="https://www.twitter.com/maxvij"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="Twitter"
+                      title="Twitter profile"
+                    >
+                      <LogoTwitter />
                     </a>
                   </div>
                 </div>
