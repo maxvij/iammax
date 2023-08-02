@@ -1,5 +1,6 @@
 import React from "react"
-
+import Helmet from "react-helmet"
+import { withPrefix, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CaseWaterRower from "../components/cases/waterrower"
@@ -8,7 +9,6 @@ import CaseBike from "../components/cases/bike"
 import Contact from "../components/contact"
 import Intro from "../components/intro"
 import About from "../components/about"
-import { Link } from "gatsby"
 import IosArrowForward from "react-ionicons/lib/IosArrowForward"
 import Tools from "../components/tools"
 
@@ -17,6 +17,9 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Product Designer" />
+        <Helmet>
+          <script src={withPrefix("js/timeline.js")} type="text/javascript" />
+        </Helmet>
         <Intro />
         <section className="work">
           <div className="container">
@@ -27,11 +30,23 @@ class IndexPage extends React.Component {
               </div>
             </div>
 
-            <CaseWaterRower />
-
-            <CaseBike />
-
-            <CaseCoach />
+            <ul id="cards">
+              <li className="card" id="card_1">
+                <div className="card_content">
+                  <CaseWaterRower />
+                </div>
+              </li>
+              <li className="card" id="card_2">
+                <div className="card_content">
+                  <CaseBike />
+                </div>
+              </li>
+              <li className="card" id="card_3">
+                <div className="card_content">
+                  <CaseCoach />
+                </div>
+              </li>
+            </ul>
 
             <div className="row">
               <div className="col-12">

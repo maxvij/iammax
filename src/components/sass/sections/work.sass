@@ -25,7 +25,7 @@ section.work
   margin-top: -20px
 .case-panel
   border-radius: 20px
-  margin: 70px -30px
+  margin: 0 -30px
   width: calc(100% + 60px)
   padding: 0 60px
   background: $white
@@ -201,7 +201,7 @@ section.work
         border-left-color: $color-car
   .cross-bar
     position: absolute
-    top: 70px
+    top: 0
     left: -15px
     width: 500px
     height: 500px
@@ -278,11 +278,14 @@ body
         background: $color-car
         outline-color: $color-car-dark
 
+.stack-cards__item
+  position: sticky
+  top: 60px
+  transform-origin: center top
 
 @include media (">large","<extralarge")
   .case-panel
     width: 100%
-    margin: 70px 0
     padding: 0 30px
     .cross-bar
       width: 400px
@@ -368,7 +371,7 @@ body
     padding: 60px 0
   .case-panel, .case-panel.right
     width: 100%
-    margin: 50px 0
+    margin: 0 0
     .cross-bar
       opacity: 0
       pointer-events: none
@@ -396,7 +399,7 @@ body
     h2 + p.subtitle
       margin-bottom: 30px
   .case-panel, .case-details, .case-panel.right
-    margin-top: 40px
+    margin-top: 0
     padding: 0 20px
     h3
       font-size: 28px
@@ -442,7 +445,7 @@ body
       margin-bottom: 60px
   .case-panel, .case-panel.right
     padding: 0 20px
-    margin-top: 30px
+    margin-top: 0
     p.paragraph
       &:last-of-type
         margin: 15px 0 40px 0

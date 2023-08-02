@@ -1,0 +1,56 @@
+:root {
+  --card-height: 700px;
+  --card-margin: 4vw;
+  --card-top-offset: 30px;
+  --numcards: 3;
+  --outline-width: 0;
+}
+
+#cards {
+  padding-bottom: calc(
+    var(--numcards) * var(--card-top-offset)
+  ); /* Make place at bottom, as items will slide to that position*/
+  margin-bottom: var(
+    --card-margin
+  ); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+}
+
+.card {
+  position: sticky;
+  top: 0;
+  padding-top: var(--card-top-offset);
+  transform-origin: 50% 0%;
+  will-change: transform;
+  background: transparent;
+  border: none;
+}
+
+#cards {
+  list-style: none;
+  outline: calc(var(--outline-width) * 10) solid blue;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--numcards), var(--card-height));
+  gap: var(--card-margin);
+}
+
+.card {
+  outline: var(--outline-width) solid hotpink;
+}
+
+.card__content {
+  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  color: rgb(10, 5, 7);
+  border-radius: 1em;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-areas: "text img";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+  align-items: stretch;
+  outline: var(--outline-width) solid lime;
+}
