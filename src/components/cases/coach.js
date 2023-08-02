@@ -40,9 +40,8 @@ const CaseCoach = props => {
                 All NOHrD fitness devices, such as described in other cases such
                 as the NOHrD Bike and the WaterRower, make use of a similar
                 ideology - enhancing the experience via digital workouts. The
-                intent of this application, NOHrD Coach, later named 'My-NOHrD',
-                is to give users access to all the available digital content,
-                matching their purchased devices.
+                intent of this application is to give users access to all the
+                available digital content, matching their purchased devices.
               </p>
               <div className="btn-container">
                 <Link

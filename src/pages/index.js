@@ -6,6 +6,8 @@ import SEO from "../components/seo"
 import CaseWaterRower from "../components/cases/waterrower"
 import CaseCoach from "../components/cases/coach"
 import CaseBike from "../components/cases/bike"
+import CaseSupporter from "../components/cases/supporter"
+import CaseCar from "../components/cases/car"
 import Contact from "../components/contact"
 import Intro from "../components/intro"
 import About from "../components/about"
@@ -44,6 +46,16 @@ class IndexPage extends React.Component {
               <li className="card" id="card_3">
                 <div className="card_content">
                   <CaseCoach />
+                </div>
+              </li>
+              <li className="card" id="card_4">
+                <div className="card_content">
+                  <CaseSupporter />
+                </div>
+              </li>
+              <li className="card" id="card_">
+                <div className="card_content">
+                  <CaseCar />
                 </div>
               </li>
             </ul>
