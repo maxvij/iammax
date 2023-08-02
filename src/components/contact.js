@@ -15,8 +15,8 @@ const Contact = props => {
               I'm currently working for{" "}
               <a href="https://www.embracecloud.nl">
                 Embrace - The Human Cloud
-              </a>{" "}
-              and available for part-time freelance projects.
+              </a>
+              . I'm available for part-time freelance projects.
             </p>
           </div>
         </div>
