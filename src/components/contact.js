@@ -1,6 +1,8 @@
 import React from "react"
 import Max from "../images/max-bw-square.webp"
+import IosArrowForward from "react-ionicons/lib/IosArrowForward"
 import NL from "../images/nl.svg"
+import { Link } from "gatsby"
 import LogoLinkedin from "react-ionicons/lib/LogoLinkedin"
 import LogoTwitter from "react-ionicons/lib/LogoTwitter"
 
@@ -9,15 +11,20 @@ const Contact = props => {
     <section className="contact">
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 text-center">
             <h2>Get in touch.</h2>
             <p className="subtitle">
-              I'm currently working for{" "}
-              <a href="https://www.embracecloud.nl">
-                Embrace - The Human Cloud
-              </a>
-              . I'm available for part-time freelance projects.
+              I'm available for part-time freelance projects.
             </p>
+            <br />
+            <Link
+              to="https://h8iglt9r1de.typeform.com/to/WgCobOJw"
+              target="_blank"
+              className="btn btn-primary"
+            >
+              Get in touch!
+            </Link>
+            <script src="//embed.typeform.com/next/embed.js"></script>
           </div>
         </div>
         <div className="row">
