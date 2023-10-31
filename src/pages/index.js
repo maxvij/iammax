@@ -11,6 +11,7 @@ import About from "../components/about"
 import { Link } from "gatsby"
 import IosArrowForward from "react-ionicons/lib/IosArrowForward"
 import Tools from "../components/tools"
+import CaseLetsCode from "../components/cases/letscode"
 
 class IndexPage extends React.Component {
   render() {
@@ -26,6 +27,8 @@ class IndexPage extends React.Component {
                 <p className="subtitle">The projects that I am most proud of</p>
               </div>
             </div>
+
+            <CaseLetsCode />
 
             <CaseWaterRower />
 
